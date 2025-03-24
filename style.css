@@ -687,8 +687,8 @@ h5 {
   font-family: "Lato-Regular";
   font-size: 18px;
   line-height: 28px;
-
-  padding: 0px 5px;
+  padding: 5px;
+  margin: 0;
 }
 .contact-box button {
   background-color: #324d3e;
