@@ -240,7 +240,6 @@ body {
   margin-right: 70px;
 }
 .rooms-pictures img {
-  min-width: 620px;
   width: 100%;
   height: 435px;
   border-top-right-radius: 150px;
@@ -261,7 +260,6 @@ body {
   }
 }
 .photos img {
-  min-width: 240px;
   width: 100%;
   min-height: 185px;
   height: 100%;
@@ -307,8 +305,8 @@ body {
   border-bottom-right-radius: 150px;
 }
 .restaurant img {
-  width: 377px;
-  height: 406px;
+  width: 375px;
+  height: 405px;
   border-top-left-radius: 50px;
 }
 .restaurant h2 {
@@ -316,6 +314,13 @@ body {
   font-size: 43px;
   white-space: nowrap;
   padding-top: 20px;
+}
+@media (max-width: 575px) {
+  .restaurant h2 {
+    white-space: normal;
+    font-size: 32px;
+    padding: 10px;
+  }
 }
 .restaurant p {
   font-family: "Lato-Regular";
