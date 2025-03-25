@@ -24,89 +24,136 @@ body {
   font-style: normal;
   font-display: swap;
 }
+/* Alapértelmezett stílusok (asztali nézet) */
 .topbar {
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  text-align: center;
   align-items: center;
+  padding: 10px 5%;
 }
-.logo2 img {
-  width: 30px;
-  height: 30px;
-}
-.logo2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-right: 15%;
-  padding: 5px;
-}
+
 .topbar ul {
-  width: 50%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  row-gap: 10px;
-  column-gap: 10px;
-  margin-left: 5%;
-  padding-top: 10px;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
 }
+
 .topbar li {
   list-style-type: none;
 }
+
 .topbar a {
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", sans-serif;
   font-size: 18px;
   color: #2e2424;
   text-decoration: none;
 }
 
+.logo2 {
+  display: flex;
+  align-items: center;
+}
+
+.logo2 img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Navigációs sáv */
 .navbar {
   background-color: #324d3e;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  text-align: center;
   align-items: center;
-  padding: 10px;
+  padding: 15px 5%;
 }
+
 .logo img {
   width: 190px;
   height: 60px;
 }
-.logo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-left: 11%;
-  padding: 0px 10px;
-}
+
 .navbar ul {
-  width: 45%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  row-gap: 20px;
-  column-gap: 20px;
-  padding: 10px 10px;
-  margin-right: 10%;
+  gap: 20px;
+  padding: 0;
 }
+
 .navbar li {
   list-style-type: none;
-  padding-top: 20px;
 }
+
 .navbar a {
-  font-family: "Lato-Regular";
+  font-family: "Lato-Regular", sans-serif;
   font-size: 18px;
   color: #ffffff;
   text-decoration: none;
 }
+
+.nav_button {
+  background-color: #ff6600;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+/* ✅ RESPONSIVE DESIGN (Mobilbarát megoldás) */
+@media (max-width: 768px) {
+  /* Topbar mobilnézet */
+  .topbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .topbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .logo2 {
+    margin-top: 10px;
+  }
+
+  /* Navigáció mobilnézet */
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .nav_button {
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 10px auto;
+  }
+
+  /* Dropdown menü középre igazítása */
+  .dropdown-menu {
+    text-align: center;
+    width: 100%;
+  }
+}
+
 .main-page {
   text-decoration: underline;
   text-underline-offset: 10px;
