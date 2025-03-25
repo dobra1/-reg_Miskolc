@@ -76,6 +76,7 @@ body {
 .logo img {
   width: 190px;
   height: 60px;
+  padding: 0px 10px;
 }
 
 .navbar ul {
@@ -84,7 +85,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 0;
+  padding: 10px 10px;
+  margin-right: 20px;
 }
 
 .navbar li {
@@ -92,7 +94,7 @@ body {
 }
 
 .navbar a {
-  font-family: "Lato-Regular", sans-serif;
+  font-family: "Lato-Regular";
   font-size: 18px;
   color: #ffffff;
   text-decoration: none;
@@ -223,8 +225,8 @@ body {
 
 .carousel-indicators .active {
   background-color: white;
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
 }
 .rooms h2 {
   font-family: "Lato-Black";
@@ -241,7 +243,7 @@ body {
 }
 .rooms-pictures img {
   width: 100%;
-  height: 435px;
+  height: 100%;
   border-top-right-radius: 150px;
   object-fit: cover;
 }
@@ -390,8 +392,8 @@ body {
   color: white;
   border-radius: 5px;
   padding: 10px 10px;
-  width: 154px;
-  height: 49px;
+  width: 155px;
+  height: auto;
   font-family: "Lato-Regular";
   font-size: 18px;
   margin-top: 40px;
@@ -400,7 +402,8 @@ body {
   font-family: "Lato-Regular";
   font-size: 18px;
   width: 230px;
-  height: 49px;
+  height: 100%;
+  padding: 10px 20px;
   border-radius: 5px;
   color: #323232;
 }
@@ -412,14 +415,15 @@ body {
   display: flex;
   align-items: center;
   padding-top: 5px;
-  padding-right: 5px;
+  padding: 10px 0px;
+  margin-left: 20px;
 }
 .sauna-item p {
   display: flex;
   align-items: center;
   padding-top: 0px;
   width: 510px;
-  padding: 0px 5px;
+  padding: 0px;
 }
 
 .hotel-sauna h2 {
@@ -427,22 +431,26 @@ body {
   font-size: 43px;
   color: #ffffff;
   margin-top: 150px;
+  padding: 0px 20px;
 }
 .hotel-sauna p {
   font-family: "Lato-Regular";
   font-size: 18px;
   color: #ffffff;
+  padding: 0px 20px;
 }
 .sauna-button {
   font-family: "Lato-Regular";
   font-size: 18px;
   color: #323232;
   background-color: white;
-  width: 151px;
-  height: 49px;
+  width: 20%;
+  height: auto;
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  padding: 10px;
+  margin-left: 20px;
 }
 
 .carousel-hotel .carousel-item img {
@@ -461,6 +469,7 @@ body {
     display: grid;
     justify-items: center;
     width: 100%;
+    padding: 40px 0px;
   }
 }
 .carousel-item,
@@ -476,7 +485,7 @@ body {
   background-color: #ffffff;
   border-bottom-right-radius: 30px;
   padding: 20px 25px;
-  margin-right: 30px;
+  margin-right: 40px;
 }
 
 .restaurant2 h2 {
@@ -494,8 +503,8 @@ body {
   line-height: 28px;
 }
 .row-icon i {
-  width: 48px !important;
-  height: 22px !important;
+  width: 50px !important;
+  height: 25px !important;
   padding: 20px 10px;
 }
 .icon-text {
@@ -506,9 +515,10 @@ body {
 }
 
 .restaurant2 img {
-  width: 623px;
-  height: 615px;
-  max-width: 100%;
+  max-width: 625px;
+  min-height: 615px;
+  height: 100%;
+  width: 100%;
   border-bottom-right-radius: 150px;
   margin-top: 60px;
   object-fit: cover;
@@ -539,7 +549,7 @@ body {
 }
 #parking-1 img,
 #parking-3 img {
-  width: 623px;
+  width: 625px;
   height: 530px;
   border: 10px solid #ffffff;
   border-top-left-radius: 150px;
@@ -547,7 +557,7 @@ body {
 }
 
 #parking-2 img {
-  width: 523px;
+  width: 625px;
   height: 530px;
   border: 10px solid #ffffff;
   border-top-right-radius: 150px;
@@ -562,7 +572,7 @@ body {
 
 .description-1,
 .description-3 {
-  width: 772px;
+  width: 775px;
   height: 435px;
   background-color: #ffffff;
   border-bottom-right-radius: 50px;
@@ -588,7 +598,7 @@ body {
 }
 
 .description-2 {
-  width: 784px;
+  width: 775px;
   height: 435px;
   background-color: #ffffff;
   border-bottom-left-radius: 50px;
@@ -634,9 +644,11 @@ body {
 }
 .menu-box img {
   border-bottom-right-radius: 50px;
-  height: 440px;
+  max-height: 440px;
+  height: auto;
   width: 100%;
   padding: 10px;
+  object-fit: contain;
 }
 .menu-box p,
 h5 {
@@ -657,14 +669,15 @@ h5 {
   color: #ffffff;
 }
 .gallery img {
-  max-width: 431px;
+  max-width: 430px;
   width: 100%;
-  max-height: 301px;
-  height: auto;
+  height: 100%;
   border: 10px solid #ffffff;
 }
 .cave img {
   border-top-left-radius: 150px;
+  width: 100%;
+  height: 100%;
 }
 .custom-carousel-icon-right {
   background-color: rgb(108, 90, 90) !important;
