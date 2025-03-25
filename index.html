@@ -136,7 +136,7 @@
                 <button class="col-6 col-md-4 rooms-btn mx-2">Tovább <i class="fas fa-arrow-right"></i></button>
             </div>
     
-            <div class="col-lg-6 order-lg-last order-last py-3">
+            <div class="col-lg-6 order-lg-last order-last py-3 mr-">
                 <div class="rooms-pictures justify-content-center">
                     <div id="rooms" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner ">
@@ -168,7 +168,7 @@
             </div>
         </div>
         
-        <div class="row row-gap-1 justify-content-around align-items-center mt-4 photos">
+        <div class="row row-gap-1 justify-content-between align-items-center mt-4 photos">
             <div class="col-12 col-xl-2">
                 <img src="assets/szoba-1.jpg" alt="Thumbnail 1" data-bs-target="#rooms" data-bs-slide-to="0">
             </div>
@@ -450,7 +450,7 @@
                         <div class="col-lg-6 d-flex align-items-center justify-content-center">
                             <div class="description-1 text-start ">
                                 <h2>Saját parkoló</h2>
-                                <p>Az Öreg Miskolcz Étterem vendégei számára kamerával megfigyelt, biztonságos parkoló áll rendelkezésre, amelyet díjmentesen használhatnak, hogy az érkezés és távozás is kényelmes legyen.</p>                            
+                                <p class="pb-4">Az Öreg Miskolcz Étterem vendégei számára kamerával megfigyelt, biztonságos parkoló áll rendelkezésre, amelyet díjmentesen használhatnak, hogy az érkezés és távozás is kényelmes legyen.</p>                            
                             </div>
                         </div>
                     </div>
@@ -604,12 +604,30 @@
         </div>
     </div>
 
+
+
+
+
 <div class="hotel-gallery my-5">
     <h2 class="text-center p-5 gallery-title">Galéria</h2>
         <div class="container gallery">
             <div class="row justify-content-between px-2  gx-3 gy-4">
                 <div class="col-10 col-md-12 col-lg-4 mx-auto">
-                    <img src="assets/kep-1.jpg" alt="Hotel">
+                    <img src="assets/kep-1.jpg" alt="Hotel" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal1">
+                </div>
+
+                <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="imageModalLabel1">Képnagyítás</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Bezárás"></button>
+                            </div>
+                            <div class="modal-body text-center">
+                                <img src="assets/kep-1.jpg" class="img-fluid" alt="Nagyított kép">
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-10 col-md-12 col-lg-4 mx-auto">
