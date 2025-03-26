@@ -243,6 +243,7 @@ body {
 }
 .rooms-pictures img {
   width: 100%;
+  max-width: 625px;
   height: 435px;
   border-top-right-radius: 150px;
   object-fit: cover;
