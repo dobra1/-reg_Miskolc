@@ -712,6 +712,12 @@ h5 {
   object-fit: contain;
   border: none;
 }
+.modal-body button {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  background-color: #ffffff;
+}
 .details {
   background-color: white;
   padding: 20px 10px;
