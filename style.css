@@ -309,9 +309,12 @@ body {
   border-bottom-right-radius: 150px;
 }
 .restaurant img {
-  width: 375px;
-  height: 405px;
+  max-width: 375px;
+  width: 100%;
+  max-height: 405px;
+  height: 100%;
   border-top-left-radius: 50px;
+  object-fit: contain;
 }
 .restaurant h2 {
   font-family: "Lato-Black";
