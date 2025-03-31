@@ -231,6 +231,7 @@ body {
 .rooms h2 {
   font-family: "Lato-Black";
   color: #323232;
+  margin-right: 30px;
 }
 .rooms p {
   font-family: "Lato-Regular";
@@ -444,9 +445,9 @@ body {
   color: #323232;
   background-color: #ffffff;
   border-bottom-right-radius: 30px;
-  width: 295px;
-  padding: 30px 30px;
-  margin-right: 220px;
+  width: 290px;
+  padding: 30px 20px;
+  margin-right: 250px;
 }
 
 .restaurant2 h2 {
@@ -460,28 +461,19 @@ body {
   font-family: "Lato-Regular";
   font-size: 18px;
   color: #323232;
-  padding: 10px 10px;
   line-height: 28px;
+  margin-left: 10px;
+  margin-right: 30px;
 }
-.row-icon i {
-  width: 50px !important;
-  height: 25px !important;
-  padding: 20px 10px;
+.restaurant2-item i {
+  margin-top: 5px;
 }
-.icon-text {
-  font-family: "Lato-Bold";
-  font-size: 18px;
-  color: #323232;
-  line-height: 28px;
-}
-
 .restaurant2 img {
-  max-width: 100%;
-  min-height: 615px;
+  max-width: 620px;
+  width: 100%;
+  min-height: 550px;
   height: 100%;
-  margin: 0px 10px;
   border-bottom-right-radius: 150px;
-  margin-top: 60px;
   object-fit: cover;
 }
 .reservation-btn {
@@ -496,11 +488,11 @@ body {
 .menu-btn {
   font-family: "Lato-Regular";
   background-color: #ffffff;
+  border: 2px solid #323232;
   border-radius: 5px;
-  border-color: 1px #323232;
+
   font-size: 18px;
-  padding: 10px 0px;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 .hotel-facilities1 {
   background-image: url("assets/Group\ 398@2x.png");
@@ -686,8 +678,7 @@ h5 {
   font-family: "Lato-Black";
   font-size: 43px;
   color: #323232;
-  line-height: 50px;
-  padding: 5px 20px;
+  padding: 0px 20px;
 }
 .details button {
   margin-top: 40px;
@@ -819,11 +810,13 @@ h5 {
   list-style: none;
   padding: 5px 10px;
 }
+
 .footer a {
   font-family: "Lato-Regular";
   font-size: 18px;
   line-height: 28px;
   color: #323232;
+  text-decoration: none;
 }
 .logos {
   display: flex;
