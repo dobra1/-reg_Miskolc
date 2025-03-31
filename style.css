@@ -231,27 +231,24 @@ body {
 
 .rooms h2 {
   font-family: "Lato-Black";
-  line-height: 50px;
   color: #323232;
-  margin: 20px;
 }
 .rooms p {
   font-family: "Lato-Regular";
   font-size: 18px;
   line-height: 28px;
-  margin: 20px;
   color: #323232;
 }
 .rooms-pictures img {
   border-top-right-radius: 150px;
   object-fit: cover;
-  height: 100%;
+  max-height: 435px;
+  width: 100%;
 }
 .rooms-btn {
   background-color: #324d3e;
   color: white;
   border-radius: 5px;
-  margin: 20px;
 }
 @media (max-width: 1399px) {
   .carousel-control-prev,
@@ -267,8 +264,8 @@ body {
 .hotel1 {
   width: 100%;
   background: #ffffff;
-  min-height: 385px;
-  height: auto;
+  height: 385px;
+  width: auto;
 }
 .hotel1_title {
   font-family: "Lato-Black";
@@ -400,54 +397,34 @@ body {
   border-radius: 5px;
   color: #323232;
 }
-.sauna-item2 {
-  display: flex;
-  align-items: start;
-}
-.sauna-item2 i {
-  display: flex;
-  align-items: center;
-  padding-top: 5px;
-  margin-left: 20px;
-}
-.sauna-item p {
-  display: flex;
-  align-items: center;
-  width: 510px;
-}
 .sauna-item1 {
-  margin-left: 10px;
+  font-family: "Lato-Regular";
+  font-size: 18px;
+  color: #ffffff;
 }
-
+.sauna-item2 {
+  font-family: "Lato-Regular";
+  font-size: 18px;
+  color: #ffffff;
+  margin-right: 20px;
+}
 .hotel-sauna h2 {
   font-family: "Lato-Black";
   font-size: 43px;
   color: #ffffff;
-  margin-top: 150px;
-  padding: 0px 20px;
-}
-.hotel-sauna p {
-  font-family: "Lato-Regular";
-  font-size: 18px;
-  color: #ffffff;
-  padding: 0px 10px;
-  margin-right: 20px;
 }
 .sauna-button {
   font-family: "Lato-Regular";
   font-size: 18px;
   color: #323232;
   background-color: white;
-
   border-radius: 5px;
   border: none;
   cursor: pointer;
   padding: 10px 20px;
-  margin-left: 20px;
 }
 
 .carousel-hotel .carousel-item img {
-  max-width: 625px;
   width: 100%;
   min-height: 570px;
   height: 100%;
@@ -462,12 +439,15 @@ body {
   overflow: visible !important;
 }
 
-.hotel-information p {
+.hotel-information h4 {
   font-family: "Lato-Regular";
   font-size: 18px;
   color: #323232;
   background-color: #ffffff;
   border-bottom-right-radius: 30px;
+  width: 295px;
+  padding: 30px 30px;
+  margin-right: 220px;
 }
 
 .restaurant2 h2 {
@@ -567,8 +547,8 @@ body {
   font-family: "Lato-Black";
   font-size: 43px;
   line-height: 50px;
-  margin-top: 130px;
-  margin-left: 55px;
+  margin-top: 50px;
+  margin-left: 25px;
   margin-right: 30px;
 }
 .description-1 p,
@@ -577,7 +557,7 @@ body {
   font-size: 18px;
   color: #323232;
   line-height: 28px;
-  margin-left: 55px;
+  margin-left: 25px;
   margin-right: 40px;
 }
 
@@ -592,16 +572,16 @@ body {
 .description-2 h2 {
   font-family: "Lato-Black";
   font-size: 43px;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-right: 45px;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 .description-2 p {
   font-family: "Lato-Regular";
   font-size: 18px;
   color: #323232;
   margin-right: 45px;
-  margin-left: 40px;
+  margin-left: 20px;
   line-height: 28px;
 }
 
@@ -800,7 +780,7 @@ h5 {
   .footer {
     flex-direction: column;
     text-align: center;
-    padding: 15px 10px;
+    padding: 15px 20px;
   }
 
   .footer ul {
@@ -832,7 +812,7 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
-  row-gap: 10px;
+  row-gap: 0px;
   padding: 0;
   padding-top: 20px;
 }
