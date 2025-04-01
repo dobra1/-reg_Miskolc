@@ -5,22 +5,29 @@ body {
   overflow-x: hidden;
 }
 @font-face {
-  font-family: Lato-Black;
-  src: url(fonts/Lato-Black.woff2);
+  font-family: Montserrat-Black;
+  src: url("/fonts/Montserrat-Black.woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: Lato-Bold;
-  src: url(fonts/Lato-Bold.woff2);
+  font-family: Montserrat-Bold;
+  src: url("/fonts/Montserrat-Bold.woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url("/fonts/Montserrat-Regular.woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: Lato-Regular;
-  src: url(fonts/Lato-Regular.woff2);
+  src: url("/fonts/Lato-Regular.woff2");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -31,7 +38,13 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  padding: 10px 5%;
+  padding: 0px 5%;
+  width: 100%;
+  position: fixed;
+  height: 5%;
+  top: 0;
+  left: 0;
+  z-index: 2000;
 }
 
 .topbar ul {
@@ -49,7 +62,7 @@ body {
 }
 
 .topbar a {
-  font-family: "Lato-Regular", sans-serif;
+  font-family: "Lato-Regular";
   font-size: 18px;
   color: #2e2424;
   text-decoration: none;
@@ -66,11 +79,15 @@ body {
 }
 
 .navbar {
+  position: fixed;
   background-color: #324d3e;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 5%;
+  width: 100%;
+  top: 50px;
+  z-index: 1000;
+  height: 70%;
 }
 
 .logo img {
@@ -184,21 +201,26 @@ body {
 
 .c-img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
-  filter: brightness(1.4);
+  filter: brightness(0.7);
+  transition: all 0.3s ease-in-out;
 }
 .main h2 {
-  font-family: "Lato-Black";
-  font-size: 60px;
+  font-family: "Montserrat-Bold";
+  font-size: 48px;
   line-height: 65px;
   color: white;
+  width: 65%;
+  padding: 5px 10px;
 }
-
 .main p {
   font-family: "Lato-Regular";
   font-size: 18px;
   line-height: 28px;
   color: white;
+  width: 80%;
+  padding: 5px 10px;
 }
 
 .main button {
@@ -229,7 +251,7 @@ body {
 }
 
 .rooms h2 {
-  font-family: "Lato-Black";
+  font-family: "Montserrat-Bold";
   color: #323232;
   margin-right: 30px;
 }
@@ -242,7 +264,7 @@ body {
 .rooms-pictures img {
   border-top-right-radius: 150px;
   object-fit: cover;
-  max-height: 435px;
+  height: auto;
   width: 100%;
 }
 .rooms-btn {
@@ -265,10 +287,9 @@ body {
   width: 100%;
   background: #ffffff;
   height: 385px;
-  width: auto;
 }
 .hotel1_title {
-  font-family: "Lato-Black";
+  font-family: "Montserrat-Bold";
   color: #ffffff;
 }
 .hotel1 h3 {
@@ -294,15 +315,13 @@ body {
   border-bottom-right-radius: 150px;
 }
 .restaurant img {
-  max-width: 375px;
   width: 100%;
-  max-height: 405px;
   height: 100%;
   border-top-left-radius: 50px;
-  object-fit: contain;
+  object-fit: cover;
 }
 .restaurant h2 {
-  font-family: "Lato-Black";
+  font-family: "Montserrat-Bold";
   font-size: 43px;
   white-space: nowrap;
   padding-top: 20px;
@@ -324,54 +343,30 @@ body {
   font-size: 18px;
   color: #324d3e;
   text-transform: uppercase;
-  padding-bottom: 10px;
-  margin: 0;
 }
-.hotel-item {
-  display: flex;
-  align-items: start;
-  font-family: "Lato-Regular";
-  font-size: 18px;
-}
-.hotel-item i {
-  margin-top: 7px;
-}
+
 .hotel-item p {
   font-family: "Lato-Regular";
   font-size: 18px;
-  margin: 0px 10px;
   line-height: 28px;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .hotel-item-last {
-  display: flex;
-  align-items: start;
   font-family: "Lato-Regular";
   font-size: 18px;
 }
-.hotel-item-last i {
-  margin-top: 7px;
-  padding: 5px 5px;
-}
-.hotel-item-last p {
-  font-family: "Lato-Regular";
-  font-size: 18px;
-  margin: 0px 5px;
-  line-height: 28px;
-  margin-right: 40px;
-}
-.restaurant .hotel-item2 {
-  font-family: "Lato-Black";
-  font-size: 32px;
-  color: #323232;
-}
+
 .restaurant .hotel-item1 {
   font-family: "Lato-Regular";
   font-size: 18px;
-  color: #323232;
-  margin-bottom: 0px;
 }
+.restaurant .hotel-item2 {
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+  color: #323232;
+}
+
 .price-details {
   font-family: "Lato-Regular";
   font-size: 18px;
@@ -381,12 +376,8 @@ body {
   background-color: #324d3e;
   color: white;
   border-radius: 5px;
-  padding: 10px 10px;
-  width: 155px;
-  height: auto;
   font-family: "Lato-Regular";
   font-size: 18px;
-  margin-top: 40px;
 }
 .package-btn {
   font-family: "Lato-Regular";
@@ -409,7 +400,7 @@ body {
   margin-right: 20px;
 }
 .hotel-sauna h2 {
-  font-family: "Lato-Black";
+  font-family: "Montserrat-Bold";
   font-size: 43px;
   color: #ffffff;
 }
@@ -426,8 +417,7 @@ body {
 
 .carousel-hotel .carousel-item img {
   width: 100%;
-  min-height: 570px;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   border-top-left-radius: 150px;
   border: 10px solid white;
@@ -451,27 +441,25 @@ body {
 }
 
 .restaurant2 h2 {
-  font-family: "Lato-Black";
+  font-family: "Montserrat-Bold";
   font-size: 43px;
   color: #323232;
   line-height: 50px;
-  padding: 0px 10px;
+  padding: 0px 20px;
 }
 .restaurant2 p {
   font-family: "Lato-Regular";
   font-size: 18px;
   color: #323232;
   line-height: 28px;
-  margin-left: 10px;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 .restaurant2-item i {
-  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .restaurant2 img {
-  max-width: 620px;
   width: 100%;
-  min-height: 550px;
   height: 100%;
   border-bottom-right-radius: 150px;
   object-fit: cover;
@@ -502,16 +490,16 @@ body {
 }
 #parking-1 img,
 #parking-3 img {
-  width: 625px;
-  height: 530px;
+  width: 100%;
+  height: auto;
   border: 10px solid #ffffff;
   border-top-left-radius: 150px;
   object-fit: cover;
 }
 
 #parking-2 img {
-  width: 625px;
-  height: 530px;
+  width: 100%;
+  height: auto;
   border: 10px solid #ffffff;
   border-top-right-radius: 150px;
   object-fit: cover;
@@ -535,7 +523,7 @@ body {
 
 .description-1 h2,
 .description-3 h2 {
-  font-family: "Lato-Black";
+  font-family: "Montserrat-Bold";
   font-size: 43px;
   line-height: 50px;
   margin-top: 50px;
@@ -561,7 +549,7 @@ body {
   border-bottom-left-radius: 50px;
 }
 .description-2 h2 {
-  font-family: "Lato-Black";
+  font-family: "Montserrat-Bold";
   font-size: 43px;
   margin-top: 50px;
   margin-right: 45px;
@@ -621,7 +609,7 @@ h5 {
   min-height: 100vh;
 }
 .gallery-title {
-  font-family: "Lato-Black";
+  font-family: "Montserrat-Bold";
   font-size: 43px;
   color: #ffffff;
 }
@@ -675,10 +663,10 @@ h5 {
   border-top-right-radius: 50px;
 }
 .details h2 {
-  font-family: "Lato-Black";
+  font-family: "Montserrat-Bold";
   font-size: 43px;
   color: #323232;
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 .details button {
   margin-top: 40px;
@@ -703,14 +691,14 @@ h5 {
   font-size: 18px;
   color: #323232;
   line-height: 22px;
-  padding: 5px 20px;
+  padding: 5px 10px;
 }
 .cave p {
   font-family: "Lato-Regular";
   font-size: 18px;
   color: #323232;
   line-height: 28px;
-  padding: 5px 20px;
+  padding: 5px 10px;
 }
 .carousel-item .row .col-lg-6 {
   margin: 0;
@@ -737,7 +725,7 @@ h5 {
   padding: 0px 30px;
 }
 .contact-box h2 {
-  font-family: "Lato-Black";
+  font-family: "Montserrat-Bold";
   font-size: 43px;
   line-height: 50px;
   padding: 10px 5px;
