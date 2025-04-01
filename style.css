@@ -2,7 +2,6 @@ html,
 body {
   margin: 0;
   background-color: #f7f7f7 !important;
-  overflow-x: hidden;
 }
 @font-face {
   font-family: Montserrat-Black;
@@ -36,17 +35,16 @@ body {
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
-  padding: 0px 5%;
+  padding: 0px 10px;
   width: 100%;
-  position: fixed;
-  height: 5%;
+
+  height: 40px;
   top: 0;
   left: 0;
   z-index: 2000;
 }
-
 .topbar ul {
   display: flex;
   flex-wrap: wrap;
@@ -56,11 +54,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .topbar li {
   list-style-type: none;
 }
-
 .topbar a {
   font-family: "Lato-Regular";
   font-size: 18px;
@@ -68,44 +64,27 @@ body {
   text-decoration: none;
 }
 
-.logo2 {
-  display: flex;
-  align-items: center;
-}
-
 .logo2 img {
   width: 30px;
   height: 30px;
 }
-
 .navbar {
-  position: fixed;
   background-color: #324d3e;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  top: 50px;
-  z-index: 1000;
-  height: 70%;
+  color: #135b88;
 }
 
 .logo img {
   width: 190px;
   height: 60px;
-  padding: 0px 10px;
 }
-
 .navbar ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   gap: 20px;
   padding: 10px 10px;
-  margin-right: 20px;
 }
-
 .navbar li {
   list-style-type: none;
 }
@@ -116,55 +95,18 @@ body {
   color: #ffffff;
   text-decoration: none;
 }
-
+@media (max-width: 991px) {
+  .topbar ul li:nth-child(2),
+  .topbar ul li:nth-child(3) {
+    display: none;
+  }
+}
 .nav_button {
   background-color: #ff6600;
   padding: 10px 15px;
   border-radius: 5px;
   color: white;
   font-weight: bold;
-}
-
-@media (max-width: 768px) {
-  .topbar {
-    flex-direction: column;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .topbar ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-  }
-
-  .logo2 {
-    margin-top: 10px;
-  }
-
-  .navbar {
-    flex-direction: column;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-    padding: 10px 0;
-  }
-
-  .nav_button {
-    display: block;
-    text-align: center;
-    margin: 10px auto;
-  }
-
-  .dropdown-menu {
-    text-align: center;
-    width: 100%;
-  }
 }
 
 .main-page {
@@ -184,19 +126,10 @@ body {
   color: #0b2545 !important;
   font-weight: bold;
 }
-.underline:after {
-  height: 3px;
-  margin: auto;
-  display: block;
-  content: "";
-  background-color: transparent;
-  transition: 0.5s ease;
-}
-.underline:hover::after {
-  background-color: #0b2545;
-}
+
 .c-item {
   height: 815px;
+  width: 100%;
 }
 
 .c-img {
