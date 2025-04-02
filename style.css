@@ -5,28 +5,28 @@ body {
 }
 @font-face {
   font-family: Montserrat-Black;
-  src: url("fonts/Montserrat-Black.woff");
+  src: url("/fonts/Montserrat-Black.woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: Montserrat-Bold;
-  src: url("fonts/Montserrat-Bold.woff");
+  src: url("/fonts/Montserrat-Bold.woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: Montserrat-Regular;
-  src: url("fonts/Montserrat-Regular.woff");
+  src: url("/fonts/Montserrat-Regular.woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: Lato-Regular;
-  src: url("fonts/Lato-Regular.woff2");
+  src: url("/fonts/Lato-Regular.woff2");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -115,6 +115,14 @@ body {
   font-family: "Montserrat-Bold";
   color: #323232 !important;
 }
+.dropdown-menu {
+  background-color: #f6f6f6b1 !important;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #323232 !important;
+  font-family: "Montserrat-Bold";
+}
 
 .main-page {
   text-decoration: underline;
@@ -125,7 +133,8 @@ body {
   background-color: #fff95a;
   color: black !important;
   padding: 10px 30px;
-  transition: background-color 0.2s linear;
+  transition: background-color 0.15s ease-in-out, opacity 0.15s linear,
+    color 0.15s linear, box-shadow 0.15s linear;
   border-radius: 5px;
 }
 .nav_button:hover {
