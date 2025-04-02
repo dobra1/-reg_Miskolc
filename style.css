@@ -70,25 +70,13 @@ body {
 }
 .navbar {
   background-color: #324d3e;
-  color: #135b88;
+  font-family: "Lato-Regular";
 }
 
 .logo img {
   width: 190px;
   height: 60px;
 }
-.navbar ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 20px;
-  padding: 10px 10px;
-}
-.navbar li {
-  list-style-type: none;
-}
-
 .navbar a {
   font-family: "Lato-Regular";
   font-size: 18px;
@@ -101,12 +89,31 @@ body {
     display: none;
   }
 }
-.nav_button {
-  background-color: #ff6600;
-  padding: 10px 15px;
-  border-radius: 5px;
+
+.custom-offcanvas {
+  border-left: 7px solid #fff95a !important;
+}
+.offcanvas_button {
+  font-family: "Montserrat-Bold";
+  background-color: #324d3e;
   color: white;
-  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px 20px;
+  line-height: 50px;
+}
+.navbar-nav .nav-logo a {
+  font-family: "Montserrat-Regular";
+  font-weight: 600;
+  color: #324d3e;
+  border-radius: 5px;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: inherit !important;
+}
+.second .nav-item .nav-link {
+  font-family: "Montserrat-Bold";
+  color: #323232 !important;
 }
 
 .main-page {
@@ -122,8 +129,7 @@ body {
   border-radius: 5px;
 }
 .nav_button:hover {
-  background-color: #8ba9c4;
-  color: #0b2545 !important;
+  background-color: transparent;
   font-weight: bold;
 }
 

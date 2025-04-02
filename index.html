@@ -35,37 +35,133 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-xl">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <a class="navbar-brand" href="#">
+            <img src="assets/ÖM logo 2019_w.png" alt="Logo">
+          </a>
+    
+          <button class="navbar-toggler d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff95a" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11z"/>
+            </svg>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
+          
+      
+          <div class="collapse navbar-collapse d-xl-flex" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link active" href="#">Főoldal</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Szobáink</a></li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link
-                </a>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Étterem</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Étterem-1</a></li>
+                  <li><a class="dropdown-item" href="#">Étterem-2</a></li>
+                  <li><a class="dropdown-item" href="#">Étterem-3</a></li>
                 </ul>
               </li>
+              <li class="nav-item"><a class="nav-link" href="#">Szaunapark</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Ajánlatok</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Ajánlatok-1</a></li>
+                  <li><a class="dropdown-item" href="#">Ajánlatok-2</a></li>
+                  <li><a class="dropdown-item" href="#">Ajánlatok-3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Látnivalók</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Galéria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Karrier</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <li><a class="nav_button d-lg-flex" href="#">Foglalás <i class="fas fa-arrow-right p-1"></i></a></li>
+            </li>
             </ul>
           </div>
+      
+          <div class="offcanvas offcanvas-end text-white d-xl-none custom-offcanvas bg-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ms-auto text-end">
+              <ul class="navbar-nav  second ">
+                <li class="nav-item"><a class="nav-link active" href="#">Főoldal</a></li>
+                <hr class="mt-1 mb-1 p-0" style="width: 330px; border: 2px solid #323232;">
+                <li class="nav-item"><a class="nav-link" href="#">Szobáink</a></li>
+                <hr class="mt-1 mb-1 p-0" style="width: 330px; border: 2px solid #323232;">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Étterem</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Étterem-1</a></li>
+                    <li><a class="dropdown-item" href="#">Étterem-2</a></li>
+                    <li><a class="dropdown-item" href="#">Étterem-3</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Szaunapark</a></li>
+                <hr class="mt-1 mb-1 p-0" style="width: 330px; border: 2px solid #323232;">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Ajánlatok</a>
+                    <hr class="mt-1 mb-1 p-0" style="width: 330px; border: 2px solid #323232;">
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Ajánlatok-1</a></li>
+                      <li><a class="dropdown-item" href="#">Ajánlatok-2</a></li>
+                      <li><a class="dropdown-item" href="#">Ajánlatok-3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Látnivalók</a>
+                    <hr class="mt-1 mb-1 p-0" style="width: 330px; border: 2px solid #323232;">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Galéria</a>
+                    <hr class="mt-1 mb-1 p-0" style="width: 330px; border: 2px solid #323232;">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Karrier</a>
+                    <hr class="mt-1 mb-1 p-0" style="width: 330px; border: 2px solid #323232;">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="offcanvas_button" href="#">Foglalás <i class="fas fa-arrow-right p-1"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="offcanvas_button" href="#"><i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i> Ajánlatkérés</a>
+                    </li>
+                  </ul>
+                  <li class="nav-logo">
+                    <a class="nav-link" href="#">Facebook <i class="fa-brands fa-facebook" style="color: #324d3e;"></i></a>
+                </li>
+
+                <li class="nav-logo">
+                    <a class="nav-link" href="#">Instagram <i class="fa-brands fa-instagram" style="color: #324d3e;"></i></a>
+                </li>
+
+                <li class="nav-logo">
+                    <a class="nav-link" href="#">Youtube <i class="fa-brands fa-youtube" style="color: #324d3e;"></i></a>
+                </li>
+                <li class="nav-logo">
+                    <a class="nav-link" href="#">Tik-Tok <i class="fa-brands fa-tiktok" style="color: #324d3e;"></i></a>
+                </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </div>
+</nav>
+      
 
     <!--
         <div class="navbar pt-3">
@@ -881,7 +977,7 @@
     }
 </script>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
