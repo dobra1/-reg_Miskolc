@@ -230,6 +230,7 @@ body {
 }
 .photos img {
   object-fit: cover;
+  width: 100%;
 }
 .hotel1 {
   min-width: 320px;
@@ -239,13 +240,13 @@ body {
   height: 100%;
 }
 .hotel1_title {
-  font-family: "Lato-Black";
+  font-family: "Montserrat-Bold";
   font-weight: normal;
   font-size: 43px;
   color: #ffffff;
 }
 .hotel1 h3 {
-  font-family: "Lato-Black";
+  font-family: "Montserrat-Bold";
   font-size: 32px;
   color: #323232;
 }
