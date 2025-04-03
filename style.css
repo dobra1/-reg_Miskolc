@@ -169,10 +169,8 @@ body {
 
 .btn-main {
   font-family: "Lato-Regular";
-  font-size: 18px;
   background-color: #ffffff;
   border: none;
-  padding: 10px 30px;
   border-radius: 5px;
   color: #323232;
 }
@@ -227,7 +225,6 @@ body {
 }
 .hotel1 img {
   background-color: #324d3e;
-
   border-bottom-left-radius: 70px;
   border-bottom-right-radius: 70px;
 }
@@ -247,36 +244,46 @@ body {
   font-size: 43px;
   white-space: nowrap;
 }
-
+@media (max-width: 767px) {
+  .restaurant h2 {
+    white-space: normal;
+    padding: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .restaurant h2 {
+    white-space: normal;
+    font-size: 32px;
+    padding: 10px;
+  }
+}
+.package-title {
+  margin: 0;
+  font-family: "Lato-Regular";
+  color: #324d3e !important;
+  font-weight: 800;
+}
 .restaurant p {
   font-family: "Lato-Regular";
   font-size: 18px;
   color: #323232;
-}
-.second-title {
-  font-family: "Lato-Regular";
-  font-size: 18px;
-  color: #324d3e;
-  text-transform: uppercase;
+  margin: 0;
 }
 
 .hotel-item p {
-  font-family: "Lato-Regular";
-  font-size: 18px;
   line-height: 28px;
   margin-right: 20px;
 }
 
-.hotel-item-last {
-  font-family: "Lato-Regular";
-  font-size: 18px;
-}
 .icon-text {
   line-height: 30px;
+  font-family: "Lato-Regular";
+  font-size: 18px;
 }
 .restaurant .hotel-item1 {
   font-family: "Lato-Regular";
   font-size: 18px;
+  margin: 0;
 }
 .restaurant .hotel-item2 {
   font-family: "Montserrat-Bold";
@@ -294,14 +301,9 @@ body {
   color: white;
   border-radius: 5px;
   font-family: "Lato-Regular";
-  font-size: 18px;
 }
 .package-btn {
   font-family: "Lato-Regular";
-  font-size: 18px;
-  width: 230px;
-  height: 100%;
-  padding: 10px 20px;
   border-radius: 5px;
   color: #323232;
 }
@@ -320,16 +322,6 @@ body {
   font-family: "Montserrat-Bold";
   font-size: 43px;
   color: #ffffff;
-}
-.sauna-button {
-  font-family: "Lato-Regular";
-  font-size: 18px;
-  color: #323232;
-  background-color: white;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  padding: 10px 20px;
 }
 
 .carousel-hotel .carousel-item img {
@@ -581,7 +573,7 @@ h5 {
 }
 .details button {
   margin-top: 40px;
-  padding: 10px;
+
   background-color: #324d3e;
   color: white;
   border-radius: 5px;
@@ -657,8 +649,6 @@ h5 {
 .contact-box button {
   background-color: #324d3e;
   border-radius: 5px;
-  padding: 10px 30px;
-  margin: 0px 5px;
   color: white;
 }
 .container-footer-1 {
