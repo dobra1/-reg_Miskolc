@@ -125,16 +125,16 @@ body {
   text-underline-offset: 10px;
   color: white;
 }
-.nav_button {
+.btn-navbar {
   background-color: #fff95a;
   color: black !important;
-  padding: 10px 30px;
   transition: background-color 0.15s ease-in-out, opacity 0.15s linear,
     color 0.15s linear, box-shadow 0.15s linear;
   border-radius: 5px;
 }
 .nav_button:hover {
   background-color: transparent;
+  color: #324d3e;
   font-weight: bold;
 }
 
@@ -165,15 +165,14 @@ body {
   max-width: 700px;
 }
 
-.main-button {
+.btn-main {
   font-family: "Lato-Regular";
   font-size: 18px;
   background-color: #ffffff;
   border: none;
-  padding: 12px 40px;
+  padding: 10px 30px;
   border-radius: 5px;
   color: #323232;
-  margin-top: 20px;
 }
 
 .rooms h2 {
@@ -205,8 +204,6 @@ body {
   }
 }
 .photos img {
-  width: 100%;
-  height: auto;
   object-fit: cover;
 }
 .hotel1 {
