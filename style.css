@@ -60,7 +60,7 @@ body {
 .topbar a {
   font-family: "Lato-Regular";
   font-size: 18px;
-  color: #2e2424;
+  color: #324d3e;
   text-decoration: none;
 }
 
@@ -71,11 +71,6 @@ body {
 .navbar {
   background-color: #324d3e;
   font-family: "Lato-Regular";
-}
-
-.logo img {
-  width: 190px;
-  height: 60px;
 }
 .navbar a {
   font-family: "Lato-Regular";
@@ -92,6 +87,7 @@ body {
 
 .custom-offcanvas {
   border-left: 7px solid #fff95a !important;
+  transform: translateY(125px) !important;
 }
 .offcanvas_button {
   font-family: "Montserrat-Bold";
@@ -143,7 +139,7 @@ body {
 }
 
 .main-item {
-  height: 90vh;
+  height: 100vh;
 }
 
 .c-img {
@@ -382,7 +378,7 @@ body {
   font-size: 18px;
   color: #323232;
   line-height: 28px;
-  width: 90%;
+  width: 100%;
 }
 .restaurant2-item i {
   margin-left: 10px;
