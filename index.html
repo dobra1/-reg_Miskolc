@@ -36,60 +36,50 @@
     </div>
 
     <nav class="navbar navbar-expand-xl position-relative">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="assets/ÖM logo 2019_w.png" alt="Logo">
-          </a>
-    
-          <button class="navbar-toggler d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff95a" class="bi bi-list" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M2.5 12.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11z"/>
-            </svg>
-          </button>
+        <div class="container-fluid d-flex justify-content-between align-items-center">
           
-      
-          <div class="collapse navbar-collapse d-xl-flex " id="navbarNav">
-            <ul class="navbar-nav ms-auto ">
-              <li class="nav-item"><a class="nav-link active" href="#">Főoldal</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Szobáink</a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Étterem</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Étterem-1</a></li>
-                  <li><a class="dropdown-item" href="#">Étterem-2</a></li>
-                  <li><a class="dropdown-item" href="#">Étterem-3</a></li>
+            <a class="nav_button d-lg-flex d-sm-block order-1 mx-auto" href="#">Foglalás <i class="fas fa-arrow-right p-1"></i></a>
+    
+            <a class="navbar-brand order-0" href="#">
+                <img src="assets/ÖM logo 2019_w.png" alt="Logo">
+            </a>
+    
+            <button class="navbar-toggler d-xl-none order-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff95a" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11z"/>
+                </svg>
+            </button>
+    
+            <div class="collapse navbar-collapse d-xl-flex" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Főoldal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Szobáink</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Étterem</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Étterem-1</a></li>
+                            <li><a class="dropdown-item" href="#">Étterem-2</a></li>
+                            <li><a class="dropdown-item" href="#">Étterem-3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Szaunapark</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ajánlatok</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ajánlatok-1</a></li>
+                            <li><a class="dropdown-item" href="#">Ajánlatok-2</a></li>
+                            <li><a class="dropdown-item" href="#">Ajánlatok-3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Látnivalók</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Galéria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Karrier</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
                 </ul>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">Szaunapark</a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Ajánlatok</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Ajánlatok-1</a></li>
-                  <li><a class="dropdown-item" href="#">Ajánlatok-2</a></li>
-                  <li><a class="dropdown-item" href="#">Ajánlatok-3</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Látnivalók</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Galéria</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Karrier</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav_button d-lg-flex" href="#">Foglalás <i class="fas fa-arrow-right p-1"></i></a>
-              </li>
-              
-            
-            </ul>
-          </div>
-      
+            </div>
+  
+    
+          
           <div class="offcanvas offcanvas-end text-white d-xl-none custom-offcanvas bg-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
@@ -164,7 +154,61 @@
         </div>
     </div>
 </nav>
-      
+
+<div id="hero-carousel" class="carousel slide  carousel-fade data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active main-item">
+            <img src="assets/fooldal-1.webp" class="d-block w-100 c-img" alt="Slide 1">
+            <div class="carousel-caption d-flex flex-column h-100 justify-content-center"  style="max-width: 750px;">
+                <div class="container main-text text-center text-lg-start"> 
+                    <h1 class="fw-bolder">Öreg Miskolcz Hotel & Étterem</h1>
+                    <p>Miskolc egyik hangulatos belvárosi utcácskája rejti a 2005-ben art deco stílusban épült szállodát.
+                        Az épület harmonikusan illeszkedik a korabeli házak múlt századbeli hangulatába.
+                    </p>
+                    <button class="main-button">Foglalás <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+      </div>
+    <div class="carousel-item main-item">
+        <img src="assets/fooldal2.webp" class="d-block w-100 c-img" alt="Slide 2">
+        <div class="carousel-caption d-flex flex-column h-100 justify-content-center"  style="max-width: 750px;">
+            <div class="container main-text text-center text-lg-start"> 
+                <h1 class="fw-bolder">Öreg Miskolcz Hotel & Étterem</h1>
+                <p>Miskolc egyik hangulatos belvárosi utcácskája rejti a 2005-ben art deco stílusban épült szállodát.
+                    Az épület harmonikusan illeszkedik a korabeli házak múlt századbeli hangulatába.
+                </p>
+                <button class="main-button">Foglalás <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-item main-item">
+        <img src="assets/fooldal-3.webp" class="d-block w-100 c-img" alt="Slide 3">
+        <div class="carousel-caption d-flex flex-column h-100 justify-content-center"  style="max-width: 750px;">
+            <div class="container main-text text-center text-lg-start"> 
+                <h1 class="fw-bolder">Öreg Miskolcz Hotel & Étterem</h1>
+                <p>Miskolc egyik hangulatos belvárosi utcácskája rejti a 2005-ben art deco stílusban épült szállodát.
+                    Az épület harmonikusan illeszkedik a korabeli házak múlt századbeli hangulatába.
+                </p>
+                <button class="main-button">Foglalás <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+    <button class="carousel-control-prev d-block" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next d-block" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
     <!--
         <div class="navbar pt-3">
@@ -182,8 +226,7 @@
             <li><a class="nav_button" href="#">Foglalás <i class="fas fa-arrow-right"></i></a></li>
         </ul>
     </div>
--->
-<div class="container-fluid">
+
     <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active"
@@ -196,9 +239,9 @@
             <div class="carousel-item active c-item">
                 <img src="assets/fooldal-1.webp" class="d-block  c-img" alt="Slide 1">
                 <div class="carousel-caption my-5 text-start">
-                    <div class="container main">
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-8 col-lg-6">
+                    <div class="container-fluid main">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-sm-12 col-md-8 col-lg-12">
                                 <h2 class="fw-bold ">Öreg Miskolcz Hotel & Étterem</h2>
                                 <p>
                                     Miskolc egyik hangulatos belvárosi utcácskája rejti a 2005-ben art deco stílusban épült szállodát.
@@ -246,7 +289,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+</div>     
                 <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev" style="left: -120px;">
                     <i class="fa-solid fa-arrow-left" style="color: #ffffff; font-size: 24px;"></i>
                     <span class="visually-hidden">Previous</span>
@@ -258,8 +301,7 @@
             </div>
             </div>
         </div>
-    </div>
-</div>
+    -->
 
 
     <div class="container pt-2">
@@ -334,24 +376,24 @@
         <h2 class="text-center hotel1_title fs-1 py-3">Miért válassz minket?</h2>
         <div class="container pb-3 logo">
             <div class="row align-items-center d-flex flex-row justify-content-center gap-3 px-4">
-                <div class="col-12 col-lg  text-center hotel1">
+                <div class="col-10  col-lg  text-center hotel1">
                     <img src="assets/Group 230@2x.png" alt="Belvárosi elhelyezkedés">
                     <h3 class="fs-3 fw-bold">Belvárosi elhelyezkedés</h3>
                     <p class="fs-5 pb-3">Miskolc szívében várjuk vendégeinket, könnyen megközelíthető helyszínnel.</p>
                 </div>
-                <div class="col-12 col-lg text-center hotel1">
+                <div class="col-10 col-lg text-center hotel1">
                     <img src="assets/Path 4@2x.png" alt="Belvárosi elhelyezkedés">
                     <h3 class="fs-3 fw-bold">Minőségi gasztronómia</h3>
                     <p class="fs-5 pb-3">Éttermünkben a tradicionális ízek találkoznak a modern konyhatechnológiával.</p>
                 </div>
 
-                <div class="col-12 col-lg text-center hotel1">
+                <div class="col-10 col-lg text-center hotel1">
                     <img src="assets/Group 256@2x.png" alt="Belvárosi elhelyezkedés">
                     <h3 class="fs-3 fw-bold">Saját parkoló</h3>
                     <p class="fs-5 pb-3">Kényelmes és biztonságos parkolási lehetőséget biztosítunk vendégeink számára.</p>
                 </div>
 
-                <div class="col-12 col-lg text-center hotel1">
+                <div class="col-10 col-lg text-center hotel1">
                     <img src="assets/Group 235@2x.png" alt="Belvárosi elhelyezkedés">
                     <h3 class="fs-3 fw-bold">Rendezvény- helyszín</h3>
                     <p class="fs-5 pb-3">Ideális helyszínt kínálunk üzleti és családi események lebonyolításához.</p>

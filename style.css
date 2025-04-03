@@ -142,36 +142,34 @@ body {
   font-weight: bold;
 }
 
-.c-item {
-  height: 815px;
-  width: 100%;
+.main-item {
+  height: 90vh;
 }
 
 .c-img {
   height: 100%;
-  width: 100%;
   object-fit: cover;
   filter: brightness(0.7);
   transition: all 0.3s ease-in-out;
 }
-.main h2 {
+
+.main-text h1 {
   font-family: "Montserrat-Bold";
   font-size: 48px;
   line-height: 65px;
   color: white;
-  width: 65%;
-  padding: 5px 10px;
+  max-width: 500px;
 }
-.main p {
+.main-text p {
   font-family: "Lato-Regular";
   font-size: 18px;
   line-height: 28px;
   color: white;
-  width: 80%;
   padding: 5px 10px;
+  max-width: 700px;
 }
 
-.main button {
+.main-button {
   font-family: "Lato-Regular";
   font-size: 18px;
   background-color: #ffffff;
@@ -180,22 +178,6 @@ body {
   border-radius: 5px;
   color: #323232;
   margin-top: 20px;
-}
-
-.carousel-indicators button {
-  max-width: 15px;
-  min-height: 15px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: none;
-  margin: 0 5px;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.carousel-indicators .active {
-  background-color: white;
-  width: 15px;
-  height: 15px;
 }
 
 .rooms h2 {
