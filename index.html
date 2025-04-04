@@ -18,23 +18,64 @@
 </head>
 
 <body>
+    <div class=" topbar">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-between p-1 elements">
+                <div class="col-auto"><i class="fas fa-phone-alt me-1"></i> +36 30 237 7774</div>
 
-    <div class="topbar">
-        <ul>
-            <li><a href="#"><i class="fas fa-phone-alt"></i> +36 30 237 7774</a></li>
-            <li><a href="#"><i class="fas fa-envelope"></i> hotel&#64;oregmiskolcz.hu</a></li>
-            <li><a href="#"><i class="fa-solid fa-location-dot"></i> 3525 Miskolc Horváth Lajos 11</a></li>
-        </ul>
-        <div class="logo2">
-                <img src="assets/hungary.png" alt="Magyar címer" class="w-auto mw-100" style="max-height: 50px;">
-                HU
-           
-            <ol class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Magyar</a></li>
-                <li><a class="dropdown-item" href="#">Angol</a></li>
-            </ol>
+                <div class="col-auto"><i class="fas fa-envelope me-1"></i> hotel@oregmiskolcz.hu</div>
+                
+                <div class="col-auto"><i class="fa-solid fa-location-dot me-1"></i> 3525 Miskolc, Horváth Lajos 11.
+            </div>
+                <div class="col text-end">
+                    <div class="logo2 dropdown">
+                        <img src="assets/hungary.png" alt="Magyar címer" class="w-auto mw-100" style="max-height: 50px;">
+                        <span>HU</span>
+
+                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"></a>
+        
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Magyar</a></li>
+                        <li><a class="dropdown-item" href="#">Angol</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
+</div>
+
+ <!--
+<div class="topbar bg-light py-2 border-bottom">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-md-8 d-flex flex-wrap gap-3">
+          <a href="tel:+36302377774" class="text-dark text-decoration-none d-flex align-items-center me-3">
+            <i class="fas fa-phone-alt me-1"></i> +36 30 237 7774
+          </a>
+          <a href="mailto:hotel@oregmiskolcz.hu" class="text-dark text-decoration-none d-flex align-items-center d-none d-xl-block me-3">
+            <i class="fas fa-envelope me-1"></i> hotel@oregmiskolcz.hu
+          </a>
+          <span class="text-dark d-flex align-items-center d-none d-lg-block d-xl-none">
+            <i class="fa-solid fa-location-dot me-1"></i> 3525 Miskolc, Horváth Lajos 11.
+          </span>
+        </div>
+  
+        <div class="col-md-4 text-md-end mt-2 mt-md-0">
+          <div class="dropdown d-inline-block ">
+            <a class="dropdown-toggle d-flex align-items-center text-dark text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/hungary.png" alt="HU zászló" class="me-2" style="height: 24px;"> HU
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-it" href="#">Magyar</a></li>
+              <li><a class="dropdown-it" href="#">Angol</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
 
     <nav class="navbar navbar-expand-xl fixed-top pt-5">
         <div class="container d-flex justify-content-between align-items-center">
@@ -404,7 +445,7 @@
                             </div>
                             
                          <div class="py-4">   
-                            <button class="btn-main btn-lg px-4 fs-6">Tovább <i class="fas fa-arrow-right"></i></button>
+                            <button type="button" class="btn-main btn-lg px-4 fs-6">Tovább <i class="fas fa-arrow-right"></i></button>
                         </div>
                     </div>
                 </div>
