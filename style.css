@@ -212,22 +212,22 @@ body {
 }
 .hotel1 p {
   font-family: "Lato-Regular";
-
   color: #323232;
 }
 .hotel1 img {
   background-color: #324d3e;
   border-bottom-left-radius: 70px;
   border-bottom-right-radius: 70px;
+  transform: scale(1);
 }
 .restaurant {
   background-color: #ffffff;
+  margin-top: 20px;
   border-bottom-right-radius: 150px;
-  height: auto;
+  height: 100%;
 }
+
 .restaurant img {
-  width: 100%;
-  height: auto;
   border-top-left-radius: 50px;
   object-fit: cover;
 }
@@ -250,7 +250,6 @@ body {
   }
 }
 .package-title {
-  margin: 0;
   font-family: "Lato-Regular";
   color: #324d3e !important;
   font-weight: 800;
@@ -259,7 +258,6 @@ body {
   font-family: "Lato-Regular";
   font-size: 18px;
   color: #323232;
-  margin: 0;
 }
 
 .hotel-item p {
@@ -268,7 +266,6 @@ body {
 }
 
 .icon-text {
-  line-height: 30px;
   font-family: "Lato-Regular";
   font-size: 18px;
 }
