@@ -173,6 +173,7 @@ body {
   border: none;
   border-radius: 5px;
   color: #323232;
+  min-width: 130px;
 }
 
 .rooms h2 {
@@ -196,6 +197,7 @@ body {
   background-color: #324d3e;
   color: white;
   border-radius: 5px;
+  min-width: 130px;
 }
 @media (max-width: 1399px) {
   .carousel-control-prev,
@@ -301,11 +303,13 @@ body {
   color: white;
   border-radius: 5px;
   font-family: "Lato-Regular";
+  min-width: 150px;
 }
 .package-btn {
   font-family: "Lato-Regular";
   border-radius: 5px;
   color: #323232;
+  min-width: 200px;
 }
 .sauna-item1 {
   font-family: "Lato-Regular";
@@ -377,6 +381,7 @@ body {
   font-size: 18px;
   color: #ffffff;
   margin-right: 20px;
+  min-width: 150px;
 }
 .menu-btn {
   font-family: "Lato-Regular";
@@ -384,6 +389,7 @@ body {
   border: 2px solid #323232;
   border-radius: 5px;
   font-size: 18px;
+  min-width: 130px;
 }
 .hotel-facilities1 {
   background-image: url("assets/Group\ 398@2x.png");
@@ -648,6 +654,7 @@ h5 {
   background-color: #324d3e;
   border-radius: 5px;
   color: white;
+  min-width: 150px;
 }
 .container-footer-1 {
   background-color: white;
