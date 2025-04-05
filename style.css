@@ -195,27 +195,29 @@ body {
     display: none !important;
   }
 }
-.photos img {
+.photo img {
   object-fit: cover;
 }
-
 .hotel1_title {
   font-family: "Montserrat-Bold";
   color: #ffffff;
 }
-.hotel1 h3 {
-  font-family: "Lato-Regular";
+.hotel1 h2 {
+  font-family: "Montserrat-Bold";
   color: #323232;
 }
-.hotel1 p {
+.card-body p {
   font-family: "Lato-Regular";
   color: #323232;
 }
 .hotel1 img {
   background-color: #324d3e;
-  border-bottom-left-radius: 70px;
-  border-bottom-right-radius: 70px;
   transform: scale(1);
+  width: 115px;
+  height: 130px;
+}
+.card {
+  height: 350px;
 }
 .restaurant {
   background-color: #ffffff;
