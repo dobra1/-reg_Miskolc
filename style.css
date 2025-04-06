@@ -403,7 +403,7 @@ body {
 
 .description-1,
 .description-3 {
-  max-height: 435px;
+  min-height: 435px;
   height: 100%;
   width: 100%;
   background-color: #ffffff;
