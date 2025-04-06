@@ -123,6 +123,7 @@ body {
   transition: background-color 0.15s ease-in-out, opacity 0.15s linear,
     color 0.15s linear, box-shadow 0.15s linear;
   border-radius: 5px;
+  border: none !important;
 }
 .nav_button:hover {
   background-color: transparent;
@@ -178,7 +179,7 @@ body {
   color: #323232;
 }
 .rooms-pictures img {
-  border-top-right-radius: 150px;
+  border-top-right-radius: 50px;
   object-fit: cover;
   height: auto;
   width: 100%;
@@ -232,19 +233,17 @@ body {
 }
 .restaurant h2 {
   font-family: "Montserrat-Bold";
-  font-size: 43px;
   white-space: nowrap;
 }
 @media (max-width: 767px) {
   .restaurant h2 {
     white-space: normal;
-    padding: 10px;
   }
 }
 @media (max-width: 575px) {
   .restaurant h2 {
     white-space: normal;
-    font-size: 32px;
+
     padding: 10px;
   }
 }
@@ -271,6 +270,7 @@ body {
 .restaurant .hotel-item1 {
   font-family: "Lato-Regular";
   font-size: 18px;
+  color: #324d3e;
   margin: 0;
 }
 .restaurant .hotel-item2 {
@@ -318,7 +318,7 @@ body {
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-top-left-radius: 150px;
+  border-top-left-radius: 50px;
   border: 10px solid white;
 }
 
@@ -344,7 +344,6 @@ body {
   font-size: 43px;
   color: #323232;
   line-height: 50px;
-  padding: 0px 20px;
 }
 .restaurant2 p {
   font-family: "Lato-Regular";
@@ -357,7 +356,7 @@ body {
 .restaurant2 img {
   width: 100%;
   height: 100%;
-  border-bottom-right-radius: 150px;
+  border-bottom-right-radius: 50px;
   object-fit: cover;
 }
 .reservation-btn {
@@ -385,18 +384,14 @@ body {
 }
 #parking-1 img,
 #parking-3 img {
-  width: 100%;
-  height: auto;
   border: 10px solid #ffffff;
-  border-top-left-radius: 150px;
+  border-top-left-radius: 50px;
   object-fit: cover;
 }
 
 #parking-2 img {
-  width: 100%;
-  height: auto;
   border: 10px solid #ffffff;
-  border-top-right-radius: 150px;
+  border-top-right-radius: 50px;
   object-fit: cover;
 }
 .hotel-facilities1 .row {
@@ -408,8 +403,6 @@ body {
 
 .description-1,
 .description-3 {
-  max-width: 775px;
-  width: 100%;
   min-height: 435px;
   height: 100%;
   background-color: #ffffff;
@@ -420,24 +413,15 @@ body {
 .description-3 h2 {
   font-family: "Montserrat-Bold";
   font-size: 43px;
-  line-height: 50px;
-  margin-top: 50px;
-  margin-left: 25px;
-  margin-right: 30px;
 }
 .description-1 p,
 .description-3 p {
   font-family: "Lato-Regular";
   font-size: 18px;
   color: #323232;
-  line-height: 28px;
-  margin-left: 25px;
-  margin-right: 40px;
 }
 
 .description-2 {
-  max-width: 775px;
-  width: 100%;
   min-height: 435px;
   height: 100%;
   background-color: #ffffff;
@@ -446,17 +430,11 @@ body {
 .description-2 h2 {
   font-family: "Montserrat-Bold";
   font-size: 43px;
-  margin-top: 50px;
-  margin-right: 45px;
-  margin-left: 20px;
 }
 .description-2 p {
   font-family: "Lato-Regular";
   font-size: 18px;
   color: #323232;
-  margin-right: 45px;
-  margin-left: 20px;
-  line-height: 28px;
 }
 
 .weekly-menu {
@@ -509,15 +487,10 @@ h5 {
   color: #ffffff;
 }
 .gallery img {
-  max-width: 430px;
-  width: 100%;
-  height: 100%;
   border: 10px solid #ffffff;
 }
 .cave img {
-  border-top-left-radius: 150px;
-  width: 100%;
-  height: 100%;
+  border-top-left-radius: 50px;
 }
 .custom-carousel-icon-right {
   background-color: rgb(108, 90, 90) !important;
@@ -533,10 +506,6 @@ h5 {
   color: white;
 }
 .container-gallery img {
-  max-width: 435px;
-  width: 100%;
-  max-height: 305px;
-  height: 100%;
   object-fit: contain;
 }
 #modalImage {
