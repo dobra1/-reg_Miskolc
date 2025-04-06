@@ -171,7 +171,6 @@ body {
 .rooms h2 {
   font-family: "Montserrat-Bold";
   color: #323232;
-  margin-right: 30px;
 }
 .rooms p {
   font-family: "Lato-Regular";
@@ -182,7 +181,7 @@ body {
 .rooms-pictures img {
   border-top-right-radius: 50px;
   object-fit: cover;
-  height: auto;
+  height: 100%;
   width: 100%;
 }
 .rooms-btn {
@@ -404,8 +403,9 @@ body {
 
 .description-1,
 .description-3 {
-  min-height: 435px;
+  max-height: 435px;
   height: 100%;
+  width: 100%;
   background-color: #ffffff;
   border-bottom-right-radius: 50px;
 }
@@ -425,6 +425,7 @@ body {
 .description-2 {
   min-height: 435px;
   height: 100%;
+  width: 100%;
   background-color: #ffffff;
   border-bottom-left-radius: 50px;
 }
