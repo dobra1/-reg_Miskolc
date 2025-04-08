@@ -133,7 +133,7 @@ body {
 }
 
 .main-item {
-  height: 100vh;
+  height: 90vh;
 }
 
 .c-img {
@@ -146,7 +146,6 @@ body {
 .main-text h1 {
   font-family: "Montserrat-Bold";
   font-size: 48px;
-  line-height: 65px;
   color: white;
   max-width: 500px;
 }
@@ -155,8 +154,6 @@ body {
   font-size: 18px;
   line-height: 28px;
   color: white;
-  padding: 5px 10px;
-  max-width: 700px;
 }
 
 .btn-main {
@@ -196,8 +193,59 @@ body {
     display: none !important;
   }
 }
-.photo img {
+.wrapper_1 {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 0.3rem;
+  padding-bottom: 5px;
+}
+
+.wrapper_1 img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .wrapper_1 {
+    flex-wrap: nowrap;
+  }
+
+  .wrapper_1 img {
+    max-width: 100%;
+  }
+}
+.wrapper_1::-webkit-scrollbar {
+  height: 10px;
+}
+
+.wrapper_1::-webkit-scrollbar-track {
+  background: #324d3e;
+}
+
+.wrapper_2 {
+  padding-bottom: 5px;
+}
+.card {
+  height: 400px;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .wrapper_2 {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+}
+
+.card img {
+  height: 110px;
+  width: 110px;
+  padding: 50px;
+  object-fit: cover;
+  object-position: center;
 }
 .hotel1_title {
   font-family: "Montserrat-Bold";
@@ -207,19 +255,22 @@ body {
   font-family: "Montserrat-Bold";
   color: #323232;
 }
+
 .card-body p {
   font-family: "Lato-Regular";
   color: #323232;
 }
 .hotel1 img {
   background-color: #324d3e;
-  transform: scale(1);
-  width: 115px;
-  height: 130px;
 }
-.card {
-  height: 350px;
+.wrapper_2::-webkit-scrollbar {
+  height: 10px;
 }
+
+.wrapper_2::-webkit-scrollbar-track {
+  background: #324d3e;
+}
+
 .restaurant {
   background-color: #ffffff;
   margin-top: 20px;
@@ -350,7 +401,6 @@ body {
   font-size: 18px;
   color: #323232;
   line-height: 28px;
-  width: 100%;
 }
 
 .restaurant2 img {

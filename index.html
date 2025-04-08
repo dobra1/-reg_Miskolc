@@ -55,7 +55,7 @@
                 <img src="assets/ÖM logo 2019_w.png" alt="Logo" class="w-auto mw-100" style="max-height: 50px;">
             </a>
     
-            <button class="navbar-toggler d-xl-none order-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <button class="navbar-toggler position-absolute end-0 d-xl-none order-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff95a" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11z"/>
                 </svg>
@@ -176,51 +176,56 @@
       <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
 
-    <div class="carousel-inner">
-        <div class="carousel-item active main-item">
+    <div class="carousel-inner w-100 mt-5">
+        <div class="carousel-item active main-item ">
             <img src="assets/fooldal-1.webp" class="d-block w-100 c-img" alt="Slide 1">
-            <div class="carousel-caption d-flex flex-column h-100 justify-content-center"  style="max-width: 750px;">
-                <div class="container main-text text-center text-lg-start mt-5 "> 
+            <div class="carousel-caption d-flex align-items-center h-100 justify-content-start">
+                <div class="col-lg-7 text-center text-lg-start"> 
                     <h1 class="fw-bolder">Öreg Miskolcz Hotel & Étterem</h1>
                     <p>Miskolc egyik hangulatos belvárosi utcácskája rejti a 2005-ben art deco stílusban épült szállodát.
-                        Az épület harmonikusan illeszkedik a korabeli házak múlt századbeli hangulatába.
+                                     Az épület harmonikusan illeszkedik a korabeli házak múlt századbeli hangulatába.
                     </p>
                     <button class="btn-main btn-lg px-4 fs-6">Foglalás <i class="fas fa-arrow-right"></i></button>
                 </div>
             </div>
-      </div>
+        </div>
+
     <div class="carousel-item main-item">
         <img src="assets/fooldal2.webp" class="d-block w-100 c-img" alt="Slide 2">
-        <div class="carousel-caption d-flex flex-column h-100 justify-content-center"  style="max-width: 750px;">
-            <div class="container main-text text-center text-lg-start mt-5"> 
+        <div class="carousel-caption d-flex align-items-center h-100 justify-content-start">
+            <div class="col-lg-7 text-center text-lg-start"> 
                 <h1 class="fw-bolder">Öreg Miskolcz Hotel & Étterem</h1>
                 <p>Miskolc egyik hangulatos belvárosi utcácskája rejti a 2005-ben art deco stílusban épült szállodát.
-                    Az épület harmonikusan illeszkedik a korabeli házak múlt századbeli hangulatába.
+                                 Az épület harmonikusan illeszkedik a korabeli házak múlt századbeli hangulatába.
                 </p>
                 <button class="btn-main btn-lg px-4 fs-6">Foglalás <i class="fas fa-arrow-right"></i></button>
             </div>
         </div>
     </div>
+          
+
     <div class="carousel-item main-item">
         <img src="assets/fooldal-3.webp" class="d-block w-100 c-img" alt="Slide 3">
-        <div class="carousel-caption d-flex flex-column h-100 justify-content-center"  style="max-width: 750px;">
-            <div class="container main-text text-center text-lg-start mt-5"> 
+        <div class="carousel-caption d-flex align-items-center h-100 justify-content-start">
+            <div class="col-lg-7 text-center text-lg-start"> 
                 <h1 class="fw-bolder">Öreg Miskolcz Hotel & Étterem</h1>
                 <p>Miskolc egyik hangulatos belvárosi utcácskája rejti a 2005-ben art deco stílusban épült szállodát.
-                    Az épület harmonikusan illeszkedik a korabeli házak múlt századbeli hangulatába.
+                                 Az épület harmonikusan illeszkedik a korabeli házak múlt századbeli hangulatába.
                 </p>
                 <button class="btn-main btn-lg px-4 fs-6">Foglalás <i class="fas fa-arrow-right"></i></button>
             </div>
         </div>
     </div>
-</div>
+        </div>
+ 
+
     <button class="carousel-control-prev d-block" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+      <i class="fa-solid fa-arrow-left fa-2xl" style="color: #f1f3f4;" aria-hidden="true"></i>
       <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next d-block" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+        <i class="fa-solid fa-arrow-right fa-2xl" style="color: #f1f3f4;" aria-hidden="true"></i>
+        <span class="visually-hidden">Next</span>
     </button>
   </div>
 
@@ -234,7 +239,7 @@
                 </div>
             </div>
     
-            <div class="col-xl-6 col-md-8 col-sm-10 order-lg-last order-last p-3">
+            <div class="col-xl-6 col-md-12 col-sm-12 order-lg-last order-last py-3">
                 <div class="rooms-pictures">
                     <div id="rooms" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -265,35 +270,40 @@
                 </div>
             </div>
        </div>
-
-       <div class="container pb-4">
-        <div class="row gx-2 gy-2 align-items-start justify-content-between photo">
-            <div class="col-xl-2 col-lg-2 col-md-6 col-12 mb-4">
-                <img class="w-100 h-auto" src="assets/szoba-01.webp" alt="Thumbnail 1" data-bs-target="#rooms" data-bs-slide-to="0">
-            </div>
-            <div class="col-xl-2 col-lg-2 col-md-6 col-12 mb-4">
-                <img class="w-100 h-auto" src="assets/szoba-02.webp" alt="Thumbnail 2" data-bs-target="#rooms" data-bs-slide-to="1">
-            </div>
-            <div class="col-xl-2 col-lg-2 col-md-6 col-12 mb-4">
-                <img class="w-100 h-auto" src="assets/szoba-03.webp" alt="Thumbnail 3" data-bs-target="#rooms" data-bs-slide-to="2">
-            </div>
-            <div class="col-xl-2 col-lg-2 col-md-6 col-12 mb-4">
-                <img class="w-100 h-auto" src="assets/szoba-01.webp" alt="Thumbnail 4" data-bs-target="#rooms" data-bs-slide-to="3">
-            </div>
-            <div class="col-xl-2 col-lg-2 col-md-6 col-12">
-                <img class="w-100 h-auto" src="assets/szoba-02.webp" alt="Thumbnail 5" data-bs-target="#rooms" data-bs-slide-to="4">
+            <div class="container pb-4">
+                <div class="row gy-2 mb-4 align-items-center justify-content-center p-2">
+                    <div class="wrapper_1 d-flex flex-nowrap justify-content-start p-1">
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <img class="w-100 h-100 mb-3" src="assets/szoba-01.webp" alt="Thumbnail 1" data-bs-target="#rooms" data-bs-slide-to="0">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <img class="w-100 h-100 mb-3" src="assets/szoba-02.webp" alt="Thumbnail 2" data-bs-target="#rooms" data-bs-slide-to="1">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <img class="w-100 h-100 mb-3" src="assets/szoba-03.webp" alt="Thumbnail 3" data-bs-target="#rooms" data-bs-slide-to="2">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <img class="w-100 h-100 mb-3" src="assets/szoba-01.webp" alt="Thumbnail 4" data-bs-target="#rooms" data-bs-slide-to="3">
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <img class="w-100 h-100 mb-3" src="assets/szoba-02.webp" alt="Thumbnail 5" data-bs-target="#rooms" data-bs-slide-to="4">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-    
+</div>   
+
 <div style="background-image: url('assets/Group\ 398@2x.png');">
-    <h1 class="d-flex  justify-content-center py-4  hotel1_title">Miért válassz minket?</h1>
-<div class="container pb-5 hotel1">
-    <div class="row text-center d-flex align-items-start justify-content-center">
+    <h1 class="text-center py-4  hotel1_title">Miért válassz minket?</h1>
+
+    <div class="container pb-5 ">
+    <div class="row text-center d-flex align-items-center justify-content-center hotel1">
+        <div class="wrapper_2 p-1 d-flex justify-content-center">
         <div class="col-xl-3 col-lg-4 col-md-5 col-sm-8 col-10 px-2 mb-3">
-            <div class="card ">
-                <img class="w-fit mx-auto mt-0 mb-3 p-3" style="border-radius: 0 0 100% 100%;" src="assets/Group 230 .svg" alt="Card image cap 1">
+            <div class="card">
+                <img class="w-fit mx-auto mt-0 mb-3 p-0" style="border-radius: 0 0 100% 100%;" src="assets/Group 230 .svg" alt="Card image cap 1">
                 <div class="card-body">
                   <h2>Belvárosi elhelyezkedés</h2>
                   <p>Miskolc szívében várjuk vendégeinket, könnyen megközelíthető helyszínnel.</p>
@@ -303,7 +313,7 @@
 
         <div class="col-xl-3 col-lg-4 col-md-5 col-sm-8 col-10 px-2 mb-3">
             <div class="card">
-                <img class="w-fit mx-auto mt-0 mb-3 p-3" style="border-radius: 0 0 100% 100%;" src="assets/Path 4.svg" alt="Card image cap">
+                <img class="w-fit mx-auto mt-0 mb-3 p-0" style="border-radius: 0 0 100% 100%;" src="assets/Path 4.svg" alt="Card image cap">
                 <div class="card-body">
                   <h2>Minőségi gasztronómia</h2>
                   <p>Éttermünkben a tradicionális ízek találkoznak a modern konyhatechnológiával.</p>
@@ -312,8 +322,8 @@
         </div>
 
         <div class="col-xl-3 col-lg-4 col-md-5 col-sm-8 col-10 px-2 mb-3">
-            <div class="card">
-                <img class="w-fit mx-auto mt-0 mb-3 p-3" style="border-radius: 0 0 100% 100%;" src="assets/Group 256.svg" alt="Card image cap">
+            <div class="card ">
+                <img class="w-fit mx-auto mt-0 mb-3 p-0" style="border-radius: 0 0 100% 100%;" src="assets/Group 256.svg" alt="Card image cap img">
                 <div class="card-body">
                   <h2>Saját parkoló</h2>
                   <p>Kényelmes és biztonságos parkolási lehetőséget biztosítunk vendégeink számára.</p>
@@ -323,7 +333,7 @@
 
         <div class="col-xl-3 col-lg-4 col-md-5 col-sm-8 col-10 px-2 mb-3">
             <div class="card">
-                <img class="w-fit mx-auto mt-0 mb-3 p-3" style="border-radius: 0 0 100% 100%;" src="assets/Group 235.svg" alt="Card image cap">
+                <img class="w-fit mx-auto m-3 mt-0 mb-3 p-0" style="border-radius: 0 0 100% 100%;" src="assets/Group 235.svg" alt="Card image cap img-fluid">
                 <div class="card-body">
                   <h2>Rendezvény- helyszín</h2>
                   <p>Ideális helyszínt kínálunk üzleti és családi események lebonyolításához.</p>
@@ -333,9 +343,8 @@
         </div>
     </div>
 </div>
-
-
-<div class="container restaurant" style="background-color: #ffffff; min-height: 50vh;">
+</div>
+<div class="container mt-3 restaurant" style="background-color: #ffffff; min-height: 50vh;">
     <div class="row d-flex justify-content-center p-3">
       
       <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 d-flex align-items-center justify-content-center">
@@ -506,26 +515,26 @@
                         összejövetelek vagy vasárnapi ebédek lebonyolítására.</p>
                         </div>
                     </div>
-                    <div class="row justify-content-start align-items-start">
+                    <div class="row justify-content-start align-items-start w-100">
                         <div class="col-sm-6 col-12 d-inline-flex align-items-center flex-nowrap py-2">
-                            <i class="fas fa-utensils fa-xl me-2" style="color: #bacbe8;"></i>
+                            <i class="fas fa-utensils fa-xl me-1" style="color: #bacbe8;"></i>
                             <span class="icon-text">A’la carte étlap</span>
                           </div>
                         
                           <div class="col-sm-6 col-12 d-inline-flex align-items-center flex-nowrap py-2">
-                            <i class="fa-solid fa-wine-glass fa-xl me-2" style="color: #bacbe8;"></i>
+                            <i class="fa-solid fa-wine-glass fa-xl me-1" style="color: #bacbe8;"></i>
                             <span class="icon-text">Kiváló borok</span>
                           </div>
                         
                           <div class="w-100"></div>
                         
                           <div class="col-sm-6 col-12 d-inline-flex align-items-center flex-nowrap py-2">
-                            <i class="fas fa-concierge-bell fa-xl me-2" style="color: #bacbe8;"></i>
+                            <i class="fas fa-concierge-bell fa-xl me-1" style="color: #bacbe8;"></i>
                             <span class="icon-text">Déli ebédmenü</span>
                           </div>
                         
                           <div class="col-sm-6 col-12 d-inline-flex align-items-center flex-nowrap py-2">
-                            <i class="fa-solid fa-mug-hot fa-xl me-2" style="color: #bacbe8;"></i>
+                            <i class="fa-solid fa-mug-hot fa-xl me-1" style="color: #bacbe8;"></i>
                             <span class="icon-text">Prémium kávék</span>
                           </div>
                         </div>
