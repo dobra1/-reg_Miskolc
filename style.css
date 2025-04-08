@@ -41,7 +41,7 @@ body {
   left: 0;
   z-index: 2000;
 }
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .topbar .elements .col-auto:nth-child(2),
   .topbar .elements .col-auto:nth-child(3) {
     display: none;
@@ -145,9 +145,8 @@ body {
 
 .main-text h1 {
   font-family: "Montserrat-Bold";
-  font-size: 48px;
+  font-size: 50px;
   color: white;
-  max-width: 500px;
 }
 .main-text p {
   font-family: "Lato-Regular";
@@ -164,6 +163,17 @@ body {
   color: #323232;
   min-width: 130px;
 }
+@media (max-width: 1199px) {
+  .rooms h2 {
+    font-size: 24px !important;
+    max-width: 400px;
+  }
+}
+@media (max-width: 992px) {
+  .rooms h2 {
+    font-size: 16px !important;
+  }
+}
 
 .rooms h2 {
   font-family: "Montserrat-Bold";
@@ -176,7 +186,7 @@ body {
   color: #323232;
 }
 .rooms-pictures img {
-  border-top-right-radius: 50px;
+  border-top-right-radius: 150px;
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -226,7 +236,11 @@ body {
 
 .wrapper_2 {
   padding-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 .card {
   height: 400px;
   width: 100%;

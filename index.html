@@ -19,46 +19,44 @@
 
 <body>
     <div class=" topbar">
-        <div class="container">
-            <div class="row d-flex align-items-center justify-content-between p-1 elements">
-                <div class="col-auto"><i class="fas fa-phone-alt me-1"></i> +36 30 237 7774</div>
-
-                <div class="col-auto"><i class="fas fa-envelope me-1"></i> hotel@oregmiskolcz.hu</div>
-                
-                <div class="col-auto"><i class="fa-solid fa-location-dot me-1"></i> 3525 Miskolc, Horváth Lajos 11.
-            </div>
-                <div class="col text-end">
-                    <div class="logo2 dropdown">
-                        <img src="assets/hungary.png" alt="Magyar címer" class="w-auto mw-100" style="max-height: 50px;">
-                        <span>HU</span>
-
-                        <a class="dropdown-toggle border-0" href="#" role="button" 
-                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"
-                        style="color: black;"></a>
         
-                    <ul class="dropdown-menu bg-white" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Magyar</a></li>
-                        <li><a class="dropdown-item" href="#">Angol</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="container py-2">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+              
+              <div class="d-flex flex-row flex-wrap align-items-center gap-3">
+                <div><i class="fas fa-phone-alt me-1"></i> +36 30 237 7774</div>
+                <div class="d-none d-lg-block"><i class="fas fa-envelope me-1"></i> hotel@oregmiskolcz.hu</div>
+                <div class="d-none d-lg-block"><i class="fa-solid fa-location-dot me-1"></i> 3525 Miskolc, Horváth Lajos 11.</div>
+              </div>
+          
+              <div class="logo2 dropdown d-flex align-items-center">
+                <img src="assets/hungary.png" alt="Magyar címer" class="w-auto mw-100 me-2" style="max-height: 50px;">
+                <span class="me-1">HU</span>
+                <a class="dropdown-toggle border-0" href="#" role="button" 
+                   id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"
+                   style="color: black;"></a>
+                <ul class="dropdown-menu bg-white" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Magyar</a></li>
+                  <li><a class="dropdown-item" href="#">Angol</a></li>
+                </ul>
+              </div>
         </div>
     </div>
-</div>
+</div>          
 
     <nav class="navbar navbar-expand-xl fixed-top pt-5">
-        <div class="container d-flex justify-content-between align-items-center">
-          
-            <button class="btn-navbar fs-6 btn-lg px-4 d-lg-flex d-sm-block order-1 mx-auto" href="#">Foglalás</button>
-    
-            <a class="navbar-brand order-0" href="#">
-                <img src="assets/ÖM logo 2019_w.png" alt="Logo" class="w-auto mw-100" style="max-height: 50px;">
+        <div class="container d-flex align-items-center justify-content-between position-relative">
+  
+            <a class="navbar-brand position-absolute start-0" href="#" style="z-index: 2;">
+              <img src="assets/ÖM logo 2019_w.png" alt="Logo" class="w-auto" style="max-height: 50px;">
             </a>
-    
-            <button class="navbar-toggler position-absolute end-0 d-xl-none order-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#fff95a" class="bi bi-list" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M2.5 12.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11z"/>
-                </svg>
+        
+            <button class="btn-navbar fs-6 btn-lg px-4 d-lg-flex d-sm-block order-1 mx-auto" href="#">Foglalás</button>
+        
+            <button class="navbar-toggler position-absolute end-0 d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#fff95a" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11z"/>
+              </svg>
             </button>
     
             <div class="collapse navbar-collapse d-xl-flex ms-auto" id="navbarNav">
@@ -88,7 +86,7 @@
                     <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
                 </ul>
             </div>
-  
+        </div>
     
           
           <div class="offcanvas offcanvas-end  text-white d-xl-none custom-offcanvas bg-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -180,15 +178,19 @@
         <div class="carousel-item active main-item ">
             <img src="assets/fooldal-1.webp" class="d-block w-100 c-img" alt="Slide 1">
             <div class="carousel-caption d-flex align-items-center h-100 justify-content-start">
-                <div class="col-lg-7 text-center text-lg-start"> 
-                    <h1 class="fw-bolder">Öreg Miskolcz Hotel & Étterem</h1>
-                    <p>Miskolc egyik hangulatos belvárosi utcácskája rejti a 2005-ben art deco stílusban épült szállodát.
-                                     Az épület harmonikusan illeszkedik a korabeli házak múlt századbeli hangulatába.
+                <div class="col-md-8 text-center text-lg-start">
+                    <h1 class="fw-bolder w-75">Öreg Miskolcz Hotel & Étterem</h1>
+                    <p>
+                      Miskolc egyik hangulatos belvárosi utcácskája rejti a 2005-ben art deco stílusban épült szállodát.
+                      Az épület harmonikusan illeszkedik a korabeli házak múlt századbeli hangulatába.
                     </p>
                     <button class="btn-main btn-lg px-4 fs-6">Foglalás <i class="fas fa-arrow-right"></i></button>
+                  </div>
+                  
+                  </div>
                 </div>
-            </div>
-        </div>
+            </div>  
+   
 
     <div class="carousel-item main-item">
         <img src="assets/fooldal2.webp" class="d-block w-100 c-img" alt="Slide 2">
@@ -230,16 +232,16 @@
   </div>
 
     <div class="container pt-2">
-        <div class="row align-items-center justify-content-center p-2">
-            <div class="col-xl-6 col-md-8 col-sm-10">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12">
                 <div class="rooms">
-                    <h2 class="fs-1">Az Öreg Miskolcz Hotel szobái elegánsak és otthonosak, a modern kényelmet és a klasszikus stílust ötvözik</h2>
-                    <p class="py-2">A szobák különböző méretűek és kialakításúak, hogy minden vendég igényét kielégítsék. Mindegyikhez tartozik fürdőszoba, TV, ingyenes Wi-Fi, és néhány szoba exkluzív extra kényelmi szolgáltatásokat is kínál. Ideálisak pároknak, családoknak vagy üzleti utazóknak.</p>               
+                    <h2>Az Öreg Miskolcz Hotel szobái elegánsak és otthonosak, a modern kényelmet és a klasszikus stílust ötvözik</h2>
+                    <p>A szobák különböző méretűek és kialakításúak, hogy minden vendég igényét kielégítsék. Mindegyikhez tartozik fürdőszoba, TV, ingyenes Wi-Fi, és néhány szoba exkluzív extra kényelmi szolgáltatásokat is kínál. Ideálisak pároknak, családoknak vagy üzleti utazóknak.</p>               
                     <button class="col rooms-btn btn-lg px-4 fs-6 align-items-center ">Tovább <i class="fas fa-arrow-right"></i></button>
                 </div>
             </div>
     
-            <div class="col-xl-6 col-md-12 col-sm-12 order-lg-last order-last py-3">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 order-lg-last order-first py-3">
                 <div class="rooms-pictures">
                     <div id="rooms" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -299,8 +301,8 @@
     <h1 class="text-center py-4  hotel1_title">Miért válassz minket?</h1>
 
     <div class="container pb-5 ">
-    <div class="row text-center d-flex align-items-center justify-content-center hotel1">
-        <div class="wrapper_2 p-1 d-flex justify-content-center">
+    <div class="row text-center d-flex align-items- center justify-content-center hotel1">
+        <div class="wrapper_2 p-1 d-flex align-items-center justify-content-center">
         <div class="col-xl-3 col-lg-4 col-md-5 col-sm-8 col-10 px-2 mb-3">
             <div class="card">
                 <img class="w-fit mx-auto mt-0 mb-3 p-0" style="border-radius: 0 0 100% 100%;" src="assets/Group 230 .svg" alt="Card image cap 1">
