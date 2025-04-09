@@ -32,6 +32,13 @@ body {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: Lato-Black;
+  src: url("fonts/Lato-Black.woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
 .topbar {
   position: fixed;
   background-color: #ffffff;
@@ -48,7 +55,7 @@ body {
   }
 }
 
-.elements {
+.info {
   font-family: "Lato-Regular";
   font-size: 18px;
   color: #324d3e;
@@ -132,27 +139,42 @@ body {
   font-weight: bold;
 }
 
-.main-item {
+.main-page {
   height: 90vh;
 }
 
 .c-img {
   height: 100%;
+
   object-fit: cover;
   filter: brightness(0.7);
   transition: all 0.3s ease-in-out;
 }
 
-.main-text h1 {
+.main-item h1 {
   font-family: "Montserrat-Bold";
-  font-size: 50px;
+  font-size: 42px;
   color: white;
+  max-width: 550px;
 }
-.main-text p {
+.main-item p {
   font-family: "Lato-Regular";
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
+
   color: white;
+  max-width: 600px;
+}
+
+@media (min-width: 991px) {
+  .main-item h1 {
+    font-size: 60px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .main-item h1 {
+    font-size: 60px !important;
+    font-weight: 600;
+  }
 }
 
 .btn-main {
@@ -163,32 +185,51 @@ body {
   color: #323232;
   min-width: 130px;
 }
-@media (max-width: 1199px) {
-  .rooms h2 {
-    font-size: 24px !important;
-    max-width: 400px;
-  }
+.custom-carousel-btn-prev {
+  position: absolute;
+  transform: translateX(-30%);
 }
-@media (max-width: 992px) {
-  .rooms h2 {
-    font-size: 16px !important;
-  }
+.custom-carousel-btn-next {
+  position: absolute;
+  transform: translateX(30%);
 }
-
 .rooms h2 {
-  font-family: "Montserrat-Bold";
+  font-family: "Lato-Black";
   color: #323232;
+  font-size: 18px;
+  max-width: 750px;
 }
 .rooms p {
   font-family: "Lato-Regular";
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
   color: #323232;
 }
+@media (min-width: 768px) {
+  .rooms h2 {
+    font-size: 24px !important;
+  }
+}
+@media (min-width: 992px) {
+  .rooms h2 {
+    font-size: 30px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .rooms h2 {
+    font-size: 36px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .rooms h2 {
+    font-size: 43px !important;
+    font-weight: 600;
+  }
+}
+
 .rooms-pictures img {
-  border-top-right-radius: 150px;
+  border-top-right-radius: 50px;
   object-fit: cover;
-  height: 100%;
+  height: 100% !important;
   width: 100%;
 }
 .rooms-btn {
