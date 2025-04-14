@@ -39,6 +39,13 @@ body {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: Lato-Bold;
+  src: url("fonts/Lato-Bold.woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
 .topbar {
   position: fixed;
   background-color: #ffffff;
@@ -283,7 +290,6 @@ body {
 }
 
 .card {
-  height: 400px;
   width: 100%;
 }
 
@@ -292,6 +298,9 @@ body {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
+  }
+  .wrapper_2 .card-body h2 {
+    font-size: 22px;
   }
 }
 
@@ -309,6 +318,7 @@ body {
 .hotel1 h2 {
   font-family: "Montserrat-Bold";
   color: #323232;
+  font-size: 31px;
 }
 
 .card-body p {
@@ -330,58 +340,63 @@ body {
   background-color: #ffffff;
   margin-top: 20px;
   border-bottom-right-radius: 150px;
-  height: 100%;
 }
 
 .restaurant img {
   border-top-left-radius: 50px;
   object-fit: cover;
+  height: 100%;
+  min-height: 550px;
+  width: 100%;
+  max-width: 600px;
 }
 .restaurant h2 {
   font-family: "Montserrat-Bold";
   white-space: nowrap;
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .restaurant h2 {
-    white-space: normal;
+    font-size: 24px !important;
   }
 }
-@media (max-width: 575px) {
+@media (min-width: 992px) {
   .restaurant h2 {
-    white-space: normal;
-
-    padding: 10px;
+    font-size: 30px !important;
   }
 }
-.package-title {
-  font-family: "Lato-Regular";
-  color: #324d3e !important;
-  font-weight: 800;
+@media (min-width: 1200px) {
+  .restaurant h2 {
+    font-size: 36px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .restaurant h2 {
+    font-size: 43px !important;
+    font-weight: 600;
+  }
+}
+.text-uppercase.package-details {
+  color: #324d3e;
+  font-size: 15px;
 }
 .restaurant p {
   font-family: "Lato-Regular";
-  font-size: 18px;
+  font-size: 16px;
+  color: black;
+  font-weight: 500;
+}
+.icon-text i {
+  margin: 5px 5px;
+}
+
+.package {
+  font-family: "Lato-Regular";
+  font-size: 15px;
   color: #323232;
 }
-
-.hotel-item p {
-  line-height: 28px;
-  margin-right: 20px;
-}
-
-.icon-text {
-  font-family: "Lato-Regular";
-  font-size: 18px;
-}
-.restaurant .hotel-item1 {
-  font-family: "Lato-Regular";
-  font-size: 18px;
-  color: #324d3e;
-  margin: 0;
-}
-.restaurant .hotel-item2 {
+.package-price {
   font-family: "Montserrat-Bold";
-  font-size: 24px;
+  font-size: 32px;
   color: #323232;
 }
 
@@ -397,27 +412,42 @@ body {
   font-family: "Lato-Regular";
   min-width: 150px;
 }
-.package-btn {
-  font-family: "Lato-Regular";
-  border-radius: 5px;
-  color: #323232;
-  min-width: 200px;
-}
+
 .sauna-item1 {
   font-family: "Lato-Regular";
-  font-size: 18px;
+  font-size: 16px;
   color: #ffffff;
 }
 .sauna-item2 {
   font-family: "Lato-Regular";
-  font-size: 18px;
+  font-size: 16px;
   color: #ffffff;
   margin-right: 20px;
 }
 .hotel-sauna h2 {
   font-family: "Montserrat-Bold";
-  font-size: 43px;
   color: #ffffff;
+}
+@media (min-width: 768px) {
+  .hotel-sauna h2 {
+    font-size: 24px !important;
+  }
+}
+@media (min-width: 992px) {
+  .hotel-sauna h2 {
+    font-size: 30px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hotel-sauna h2 {
+    font-size: 36px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .hotel-sauna h2 {
+    font-size: 43px !important;
+    font-weight: 600;
+  }
 }
 
 .carousel-hotel .carousel-item img {
@@ -441,19 +471,39 @@ body {
   background-color: #ffffff;
   border-bottom-right-radius: 30px;
   width: 290px;
-  padding: 30px 20px;
+  padding: 20px 20px;
   margin-right: 250px;
 }
 
 .restaurant2 h2 {
   font-family: "Montserrat-Bold";
-  font-size: 43px;
   color: #323232;
   line-height: 50px;
 }
+@media (min-width: 768px) {
+  .restaurant2 h2 {
+    font-size: 24px !important;
+  }
+}
+@media (min-width: 992px) {
+  .restaurant2 h2 {
+    font-size: 30px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .restaurant2 h2 {
+    font-size: 36px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .restaurant2 h2 {
+    font-size: 43px !important;
+    font-weight: 600;
+  }
+}
 .restaurant2 p {
   font-family: "Lato-Regular";
-  font-size: 18px;
+  font-size: 16px;
   color: #323232;
   line-height: 28px;
 }
@@ -470,8 +520,6 @@ body {
   border-radius: 5px;
   font-size: 18px;
   color: #ffffff;
-  margin-right: 20px;
-  min-width: 150px;
 }
 .menu-btn {
   font-family: "Lato-Regular";
@@ -507,40 +555,32 @@ body {
 }
 
 .description-1,
+.description-2,
 .description-3 {
-  min-height: 435px;
-  height: 100%;
-  width: 100%;
   background-color: #ffffff;
-  border-bottom-right-radius: 50px;
+  max-height: 400px;
 }
 
 .description-1 h2,
+.description-2 h2,
 .description-3 h2 {
   font-family: "Montserrat-Bold";
-  font-size: 43px;
-}
-.description-1 p,
-.description-3 p {
-  font-family: "Lato-Regular";
-  font-size: 18px;
-  color: #323232;
+  font-size: 22px;
 }
 
-.description-2 {
-  min-height: 435px;
-  height: 100%;
-  width: 100%;
-  background-color: #ffffff;
-  border-bottom-left-radius: 50px;
+@media (min-width: 991px) {
+  .description-1 h2,
+  .description-2 h2,
+  .description-3 h2 {
+    font-size: 32px !important;
+    font-weight: 600;
+  }
 }
-.description-2 h2 {
-  font-family: "Montserrat-Bold";
-  font-size: 43px;
-}
-.description-2 p {
+.description-1 p,
+.description-2 p,
+.description-3 p {
   font-family: "Lato-Regular";
-  font-size: 18px;
+  font-size: 16px;
   color: #323232;
 }
 
@@ -590,11 +630,31 @@ h5 {
 }
 .gallery-title {
   font-family: "Montserrat-Bold";
-  font-size: 43px;
   color: #ffffff;
 }
+@media (min-width: 768px) {
+  .gallery-title {
+    font-size: 24px !important;
+  }
+}
+@media (min-width: 992px) {
+  .gallery-title {
+    font-size: 30px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery-title {
+    font-size: 36px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .gallery-title {
+    font-size: 43px !important;
+    font-weight: 600;
+  }
+}
 .gallery img {
-  border: 10px solid #ffffff;
+  border: 5px solid #ffffff;
 }
 .cave img {
   border-top-left-radius: 50px;
@@ -632,10 +692,18 @@ h5 {
   background-color: white;
   padding: 20px 10px;
   border-top-right-radius: 50px;
+  min-height: 500px;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .details {
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 0;
+  }
 }
 .details h2 {
   font-family: "Montserrat-Bold";
-  font-size: 43px;
+  font-size: 24px;
   color: #323232;
   padding: 0px 10px;
 }
@@ -657,17 +725,48 @@ h5 {
 }
 .attractions {
   font-family: "Lato-Regular";
-  font-size: 18px;
+  font-size: 16px;
   color: #323232;
   line-height: 22px;
   padding: 5px 10px;
 }
+.cave h2 {
+  font-family: "Montserrat-Bold";
+}
+@media (min-width: 768px) {
+  .cave h2 {
+    font-size: 24px !important;
+  }
+}
+@media (min-width: 992px) {
+  .cave h2 {
+    font-size: 30px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .cave h2 {
+    font-size: 36px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .cave h2 {
+    font-size: 43px !important;
+    font-weight: 600;
+  }
+}
 .cave p {
   font-family: "Lato-Regular";
-  font-size: 18px;
+  font-size: 16px;
   color: #323232;
   line-height: 28px;
   padding: 5px 10px;
+}
+.cave img {
+  object-fit: cover;
+  height: 100%;
+  min-height: 550px;
+  width: 100%;
+  max-width: 700px;
 }
 .carousel-item .row .col-lg-6 {
   margin: 0;
@@ -680,36 +779,47 @@ h5 {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .contact-box {
   background-color: white;
-  min-height: 575px;
-  height: auto;
-  max-width: 405px;
+  min-height: 450px;
+  max-width: 350px;
   width: 100%;
   border-bottom-right-radius: 50px;
   display: flex;
-  align-items: start;
   flex-direction: column;
   justify-content: center;
-  padding: 0px 30px;
 }
 .contact-box h2 {
   font-family: "Montserrat-Bold";
-  font-size: 43px;
-  line-height: 50px;
-  padding: 10px 5px;
+  padding: 0px 5px;
+}
+@media (min-width: 768px) {
+  .contact-box h2 {
+    font-size: 24px !important;
+  }
+}
+@media (min-width: 992px) {
+  .contact-box h2 {
+    font-size: 30px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-box h2 {
+    font-size: 36px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .contact-box h2 {
+    font-size: 43px !important;
+    font-weight: 600;
+  }
 }
 .contact-box p {
   font-family: "Lato-Regular";
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 16px;
   padding: 5px;
   margin: 0;
-}
-.box img {
-  max-width: 100%;
-  height: auto;
-  display: block;
 }
 
 .contact-box button {
