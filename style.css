@@ -90,9 +90,11 @@ body {
   }
 }
 
+.offcanvas {
+  top: 4% !important;
+}
 .custom-offcanvas {
-  border-left: 7px solid #fff95a !important;
-  transform: translateY(125px) !important;
+  border-left: 7px solid #eae210 !important;
 }
 .offcanvas_button {
   font-family: "Montserrat-Bold";
@@ -102,17 +104,27 @@ body {
   padding: 10px 20px;
   line-height: 50px;
 }
+.custom-close-btn {
+  top: 0px;
+  right: 10px;
+}
+
+.offcanvas-header {
+  padding-top: 0.5rem;
+  background-color: #324d3e;
+  height: 55px;
+}
+
 .navbar-nav .nav-logo a {
   font-family: "Montserrat-Regular";
   font-weight: 600;
   color: #324d3e;
   border-radius: 5px;
 }
-.navbar-toggler,
-.navbar-toggler:focus,
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link:focus {
-  color: inherit !important;
+
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 .second .nav-item .nav-link {
   font-family: "Montserrat-Bold";
