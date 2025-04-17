@@ -395,6 +395,12 @@ body {
   color: #323232;
 }
 
+@media (max-width: 992px) {
+  .package-price {
+    font-size: 24px;
+  }
+}
+
 .price-details {
   font-family: "Lato-Regular";
   font-size: 18px;
@@ -651,6 +657,7 @@ h5 {
 }
 .gallery img {
   border: 5px solid #ffffff;
+  object-fit: cover;
 }
 .cave img {
   border-top-left-radius: 50px;
@@ -668,9 +675,7 @@ h5 {
   background-color: #324d3e;
   color: white;
 }
-.container-gallery img {
-  object-fit: contain;
-}
+
 #modalImage {
   width: 100%;
   max-width: 1000px;
