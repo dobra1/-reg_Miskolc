@@ -104,6 +104,10 @@ body {
   padding: 10px 20px;
   line-height: 50px;
 }
+.offcanvas_button:hover {
+  color: black;
+}
+
 .custom-close-btn {
   top: 0px;
   right: 10px;
@@ -206,7 +210,7 @@ body {
 .rooms h2 {
   font-family: "Lato-Black";
   color: #323232;
-  font-size: 18px;
+  font-size: 24px;
   max-width: 750px;
 }
 .rooms p {
